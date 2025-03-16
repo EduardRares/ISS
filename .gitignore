@@ -40,3 +40,7 @@ bin/
 
 ### Mac OS ###
 .DS_Store
+
+/path/to/submodule-directory/Planificarea_Iterațiilor.odt
+/path/to/submodule-directory/Use case template.docx
+/path/to/submodule-directory/UseCase.drawio
