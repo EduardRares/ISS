@@ -1,0 +1,3 @@
+[submodule "path/to/submodule-directory"]
+	path = path/to/submodule-directory
+	url = https://github.com/EduardRares/ISS.git
