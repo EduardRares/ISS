@@ -24,7 +24,7 @@ public class JdbcUtils {
     private Connection getNewConnection(){
         logger.traceEntry();
 
-        String url=jdbcProps.getProperty("jdbc.url");
+        String url=jdbcProps.getProperty("URL");
         String user=jdbcProps.getProperty("jdbc.user");
         String pass=jdbcProps.getProperty("jdbc.pass");
         logger.info("trying to connect to database ... {}",url);
@@ -32,7 +32,6 @@ public class JdbcUtils {
         logger.info("pass: {}", pass);
         Connection con=null;
         try {
-
             if (user!=null && pass!=null)
                 con= DriverManager.getConnection(url,user,pass);
             else

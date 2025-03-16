@@ -9,7 +9,8 @@
 <?import javafx.scene.text.Font?>
 
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="577.0" prefWidth="844.0" stylesheets="@CSS/login.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<?import javafx.scene.control.PasswordField?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="577.0" prefWidth="844.0" stylesheets="@CSS/login.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ro.iss2025.medicineorderingsystem.controller.LoginController">
    <children>
       <AnchorPane prefHeight="577.0" prefWidth="325.0" style="-fx-background-color: #336D82;">
          <children>
@@ -35,15 +36,15 @@
             <Font name="System Bold" size="13.0" />
          </font>
       </Label>
-      <Button layoutX="394.0" layoutY="365.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="100.0" text=" Log In" textAlignment="CENTER" />
+      <Button onAction="#login" layoutX="394.0" layoutY="365.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="100.0" text=" Log In" textAlignment="CENTER" />
       <Label layoutX="394.0" layoutY="138.0" prefHeight="48.0" prefWidth="399.0" text="Log into Medicine Ordering System">
          <font>
             <Font name="System Bold" size="23.0" />
          </font>
       </Label>
       <Label layoutX="394.0" layoutY="186.0" opacity="0.8" prefHeight="17.0" prefWidth="163.0" text="Enter your credentials below" />
-      <TextField layoutX="394.0" layoutY="250.0" prefHeight="29.0" prefWidth="180.0" promptText="Enter your email address" />
-      <TextField layoutX="394.0" layoutY="311.0" prefHeight="29.0" prefWidth="180.0" promptText="Enter your password" />
+      <TextField fx:id="emailText" layoutX="394.0" layoutY="250.0" prefHeight="29.0" prefWidth="180.0" promptText="Enter your email address" />
+      <PasswordField fx:id="passwordText" layoutX="394.0" layoutY="311.0" prefHeight="29.0" prefWidth="180.0" promptText="Enter your password" />
       <Label layoutX="394.0" layoutY="289.0" prefHeight="22.0" prefWidth="121.0" text="Password">
          <font>
             <Font name="System Bold" size="13.0" />

@@ -75,6 +75,7 @@ public class OrderRepo implements OrderRepoInterface{
                     Order order = new Order(medicine, quantity);
                     if("PENDING".equals(status)) order.setStatus(Status.PENDING);
                     if("DELIVERED".equals(status)) order.setStatus(Status.DELIVERED);
+                    if("REJECTED".equals(status)) order.setStatus(Status.REJECTED);
                     order.setId(id);
                     orders.add(order);
                 }

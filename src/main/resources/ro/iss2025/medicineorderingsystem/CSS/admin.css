@@ -1,0 +1,30 @@
+.button.menu{
+    -fx-background-color: transparent;
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+    -fx-border-width: 10px;
+    -fx-background-radius: 25;
+    -fx-text-fill: white;
+
+}
+
+.button.menu:hover{
+    -fx-background-color: #D3E3F5;
+    -fx-text-fill: black;
+}
+.table-view .column-header{
+    -fx-background-color: #336D82;
+    -fx-border-width: 1;
+    -fx-border-color: #1d5870;
+}
+
+.table-view .label {
+    -fx-text-font: regular;
+    -fx-text-family: Arial;
+    -fx-text-fill: white;
+}
+
+.table-view{
+    -fx-border-width: 1;
+    -fx-border-color: #1d5870;
+}
