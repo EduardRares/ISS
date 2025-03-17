@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="542.0" prefWidth="859.0" stylesheets="@CSS/admin.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ro.iss2025.medicineorderingsystem.controller.AdminController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="539.0" prefWidth="972.0" stylesheets="@CSS/admin.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ro.iss2025.medicineorderingsystem.controller.AdminController">
    <children>
       <AnchorPane prefHeight="542.0" prefWidth="238.0" style="-fx-background-color: #336D82;">
          <children>
@@ -16,27 +16,68 @@
                   <Font size="17.0" />
                </font>
             </Label>
-            <Button fx:id="usersButton" focusTraversable="false" layoutX="45.0" layoutY="258.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="135.0" styleClass="menu" text="All Medicines" textFill="WHITE">
+            <Button focusTraversable="false" layoutX="45.0" layoutY="258.0" mnemonicParsing="false" onAction="#handleMedicines" prefHeight="27.0" prefWidth="135.0" styleClass="menu" text="All Medicines" textFill="WHITE">
                <font>
                   <Font name="Arial" size="15.0" />
                </font></Button>
-            <Button fx:id="medicinesButton" focusTraversable="false" layoutX="45.0" layoutY="224.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="135.0" styleClass="menu" text="All Users" textFill="WHITE">
+            <Button focusTraversable="false" layoutX="45.0" layoutY="224.0" mnemonicParsing="false" onAction="#handleUsers" prefHeight="26.0" prefWidth="135.0" styleClass="menu" text="All Users" textFill="WHITE">
                <font>
                   <Font name="Arial" size="15.0" />
                </font>
             </Button>
          </children>
       </AnchorPane>
-      <AnchorPane layoutX="238.0" prefHeight="542.0" prefWidth="621.0">
+      <AnchorPane layoutX="238.0" prefHeight="542.0" prefWidth="632.0">
          <children>
-            <TableView layoutX="28.0" layoutY="15.0" prefHeight="512.0" prefWidth="566.0">
+            <TableView fx:id="tableViewMedicine" layoutX="28.0" layoutY="15.0" prefHeight="512.0" prefWidth="566.0">
               <columns>
-                <TableColumn prefWidth="81.0" text="ID" />
-                <TableColumn prefWidth="137.0" text="Name" />
-                  <TableColumn prefWidth="121.0" text="Type" />
-                  <TableColumn prefWidth="226.0" text="Description" />
+                <TableColumn fx:id="tableColumnId" prefWidth="81.0" text="ID" />
+                <TableColumn fx:id="tableColumnName" prefWidth="137.0" text="Name" />
+                  <TableColumn fx:id="tableColumnType" prefWidth="121.0" text="Type" />
+                  <TableColumn fx:id="tableColumnDescription" prefWidth="226.0" text="Description" />
               </columns>
             </TableView>
+            <TableView fx:id="tableViewEmployee" fixedCellSize="0.0" layoutX="28.0" layoutY="15.0" prefHeight="512.0" prefWidth="566.0">
+               <columns>
+                  <TableColumn fx:id="tableColumnId1" prefWidth="81.0" text="ID" />
+                  <TableColumn fx:id="tableColumnEmail" prefWidth="290.0" text="Email" />
+                  <TableColumn fx:id="tableColumnPrivilege" prefWidth="193.0" text="Privilege" />
+               </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="834.0" layoutY="1.0" prefHeight="539.0" prefWidth="135.0">
+         <children>
+            <Button fx:id="addButton" layoutX="38.0" layoutY="209.0" mnemonicParsing="false" onAction="#handleAdd" prefHeight="30.0" prefWidth="64.0" styleClass="functionality" text="Add">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="updateButton" layoutX="38.0" layoutY="255.0" mnemonicParsing="false" onAction="#handleUpdate" styleClass="functionality" text="Update">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="deleteButton" layoutX="38.0" layoutY="301.0" mnemonicParsing="false" onAction="#handleDelete" prefHeight="30.0" prefWidth="64.0" styleClass="functionality" text="Delete">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="addButtonEmployee" layoutX="38.0" layoutY="209.0" mnemonicParsing="false" onAction="#handleAddEmployee" prefHeight="30.0" prefWidth="64.0" styleClass="functionality" text="Add">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="updateButtonEmployee" layoutX="38.0" layoutY="255.0" mnemonicParsing="false" onAction="#handleUpdateEmployee" styleClass="functionality" text="Update">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="deleteButtonEmployee" layoutX="38.0" layoutY="301.0" mnemonicParsing="false" onAction="#handleDeleteEmployee" prefHeight="30.0" prefWidth="64.0" styleClass="functionality" text="Delete">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
          </children>
       </AnchorPane>
    </children>

@@ -11,6 +11,12 @@ public class Medicine extends Entity<Integer>{
         this.description = description;
     }
 
+    public Medicine() {
+        name = "";
+        type = "";
+        description = "";
+    }
+
     public String getName() {
         return name;
     }
@@ -33,5 +39,10 @@ public class Medicine extends Entity<Integer>{
 
     public void setDescription(String description) {
         this.description = description;
+    }
+
+    @Override
+    public String toString() {
+        return "Medicine{" + "name=" + name + ", type=" + type + ", description=" + description + '}';
     }
 }

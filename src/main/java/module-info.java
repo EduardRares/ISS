@@ -11,4 +11,6 @@ module ro.iss2025.medicineorderingsystem {
     exports ro.iss2025.medicineorderingsystem;
     exports ro.iss2025.medicineorderingsystem.controller;
     opens ro.iss2025.medicineorderingsystem.controller to javafx.fxml;
+    opens ro.iss2025.medicineorderingsystem.domain to javafx.base;
+
 }

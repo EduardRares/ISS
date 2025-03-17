@@ -16,6 +16,11 @@ public class HospitalEmployee extends Entity<Integer> {
         this.password = password;
     }
 
+    public HospitalEmployee() {
+        email = "";
+        password = "";
+    }
+
     public String getEmail() {
         return email;
     }
