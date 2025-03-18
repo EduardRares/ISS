@@ -21,7 +21,7 @@ import ro.iss2025.medicineorderingsystem.utils.observer.Observer;
 
 import java.util.Optional;
 
-public class AdminController implements Observer<MedicineEvent> {
+public class AdminController {
     @FXML
     private Button addButton;
     @FXML
@@ -99,11 +99,6 @@ public class AdminController implements Observer<MedicineEvent> {
         tableViewEmployee.getSelectionModel().selectedItemProperty().addListener((observable, oldValue, newValue) -> {
             hospitalEmployee = tableViewEmployee.getSelectionModel().getSelectedItem();
         });
-
-    }
-
-    @Override
-    public void update(MedicineEvent event) {
 
     }
 

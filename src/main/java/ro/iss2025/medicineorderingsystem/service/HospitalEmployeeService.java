@@ -2,6 +2,8 @@ package ro.iss2025.medicineorderingsystem.service;
 
 import ro.iss2025.medicineorderingsystem.domain.HospitalEmployee;
 import ro.iss2025.medicineorderingsystem.repository.HospitalEmployeeRepoInterface;
+import ro.iss2025.medicineorderingsystem.utils.events.OrderEvent;
+import ro.iss2025.medicineorderingsystem.utils.observer.Observable;
 
 import java.util.List;
 import java.util.Optional;

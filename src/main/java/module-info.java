@@ -6,6 +6,7 @@ module ro.iss2025.medicineorderingsystem {
     requires org.kordamp.bootstrapfx.core;
     requires org.apache.logging.log4j;
     requires java.sql;
+    requires java.desktop;
 
     opens ro.iss2025.medicineorderingsystem to javafx.fxml;
     exports ro.iss2025.medicineorderingsystem;

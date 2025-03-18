@@ -11,4 +11,5 @@ public interface OrderRepoInterface extends Repository<Integer, Order> {
     public HospitalEmployee findEmployeeById(Integer employeeId);
     public List<Order> findPendingOrders();
     public List<Order> findProcessedOrders();
+    public List<Order> findOrdersByEmployeeId(Integer employeeId);
 }

@@ -16,11 +16,15 @@ import ro.iss2025.medicineorderingsystem.domain.Status;
 import ro.iss2025.medicineorderingsystem.service.HospitalEmployeeService;
 import ro.iss2025.medicineorderingsystem.service.MedicineService;
 import ro.iss2025.medicineorderingsystem.service.OrderService;
+import ro.iss2025.medicineorderingsystem.utils.events.Event;
+import ro.iss2025.medicineorderingsystem.utils.events.MedicineEvent;
+import ro.iss2025.medicineorderingsystem.utils.events.OrderEvent;
+import ro.iss2025.medicineorderingsystem.utils.observer.Observer;
 
 import java.nio.Buffer;
 import java.util.List;
 
-public class PharmacistController {
+public class PharmacistController implements Observer<Event> {
     @FXML
     private Button deliverButton;
     @FXML
@@ -47,6 +51,7 @@ public class PharmacistController {
         this.orderService = orderService;
         this.hospitalEmployeeService = hospitalEmployeeService;
         this.medicineService = medicineService;
+        orderService.addObserver(this);
     }
 
     @FXML
@@ -102,5 +107,18 @@ public class PharmacistController {
         order.setStatus(Status.REJECTED);
         orderService.update(order);
         handlePendingOrders();
+    }
+
+    @Override
+    public void update(Event event) {
+        if(event instanceof OrderEvent) {
+            if(deliverButton.isVisible()) {
+                model.clear();
+                List<Order> processedOrders = orderService.findPendingOrders();
+                processedOrders.sort((o1, o2) -> o1.getOrderDate().compareTo(o2.getOrderDate()));
+                model.addAll(processedOrders);
+                tableViewOrders.setItems(model);
+            }
+        }
     }
 }

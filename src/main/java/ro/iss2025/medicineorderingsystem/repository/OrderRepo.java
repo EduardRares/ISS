@@ -31,7 +31,7 @@ public class OrderRepo implements OrderRepoInterface{
             preStmt.setInt(2, entity.getEmployee().getId());
             preStmt.setInt(3, entity.getQuantity());
             preStmt.setString(4, entity.getStatus().toString());
-            preStmt.setDate(5, new java.sql.Date(entity.getOrderDate().toLocalDate().toEpochDay()));
+            preStmt.setTimestamp(5, java.sql.Timestamp.valueOf(entity.getOrderDate()));
             int result=preStmt.executeUpdate();
             logger.trace("Saved {} instances", result);
         } catch (SQLException ex) {
@@ -199,6 +199,38 @@ public class OrderRepo implements OrderRepoInterface{
                     int id = rs.getInt("id");
                     int medicineId = rs.getInt("medicineId");
                     int employeeId = rs.getInt("employeeId");
+                    int quantity = rs.getInt("quantity");
+                    String status = rs.getString("status");
+                    LocalDateTime orderDate = rs.getTimestamp("orderDate").toLocalDateTime();
+                    Medicine medicine = findMedicineById(medicineId);
+                    HospitalEmployee employee = findEmployeeById(employeeId);
+                    Order order = new Order(medicine, quantity, orderDate);
+                    if("DELIVERED".equals(status)) order.setStatus(Status.DELIVERED);
+                    if("REJECTED".equals(status)) order.setStatus(Status.REJECTED);
+                    order.setEmployee(employee);
+                    order.setId(id);
+                    orders.add(order);
+                }
+            }
+        } catch (SQLException ex) {
+            logger.error(ex);
+            System.err.println("Error DB" + ex);
+        }
+        logger.traceExit(orders);
+        return orders;
+    }
+
+    @Override
+    public List<Order> findOrdersByEmployeeId(Integer employeeId) {
+        logger.traceEntry();
+        Connection conn= dbUtils.getConnection();
+        List<Order> orders = new ArrayList<>();
+        try(PreparedStatement preStmt = conn.prepareStatement("select * from 'order' where employeeId = ?")) {
+            preStmt.setInt(1, employeeId);
+            try(ResultSet rs = preStmt.executeQuery()) {
+                while(rs.next()) {
+                    int id = rs.getInt("id");
+                    int medicineId = rs.getInt("medicineId");
                     int quantity = rs.getInt("quantity");
                     String status = rs.getString("status");
                     LocalDateTime orderDate = rs.getTimestamp("orderDate").toLocalDateTime();
