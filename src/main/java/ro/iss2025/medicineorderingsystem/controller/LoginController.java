@@ -54,6 +54,16 @@ public class LoginController {
                 AdminController adminController = fxmlLoader.getController();
                 adminController.setService(user, hospitalEmployeeService, medicineService);
             }
+            else if(user.getPrivilege().toString().equals("PHARMACIST")) {
+                FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("PharmacistInterface.fxml"));
+                Scene scene = new Scene(fxmlLoader.load());
+                Stage stage = new Stage();
+                stage.setTitle("Pharmacist Interface");
+                stage.setScene(scene);
+                stage.show();
+                PharmacistController pharmacistController = fxmlLoader.getController();
+                pharmacistController.setService(user, orderService, hospitalEmployeeService, medicineService);
+            }
         }
         else {
             Alert alert = new Alert(Alert.AlertType.ERROR);

@@ -63,10 +63,12 @@ public class AdminController implements Observer<MedicineEvent> {
     private MedicineService medicineService;
     private Medicine medicine;
     private HospitalEmployee hospitalEmployee;
+    private HospitalEmployee user;
     ObservableList<Medicine> model = FXCollections.observableArrayList();
     ObservableList<HospitalEmployee> modelEmployee = FXCollections.observableArrayList();
 
     public void setService(HospitalEmployee user, HospitalEmployeeService hospitalEmployeeService, MedicineService medicineService) {
+        this.user = user;
         this.hospitalEmployeeService = hospitalEmployeeService;
         this.medicineService = medicineService;
     }

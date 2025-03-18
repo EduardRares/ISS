@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="539.0" prefWidth="988.0" stylesheets="@CSS/admin.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ro.iss2025.medicineorderingsystem.controller.PharmacistController">
+   <children>
+      <AnchorPane prefHeight="539.0" prefWidth="266.0" style="-fx-background-color: #336D82;" />
+      <Label fx:id="labelToFocus" alignment="CENTER" contentDisplay="CENTER" layoutX="17.0" layoutY="179.0" opacity="0.89" prefHeight="26.0" prefWidth="105.0" text="Menu" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Button focusTraversable="false" layoutX="55.0" layoutY="268.0" mnemonicParsing="false" onAction="#handleProcessedOrders" prefHeight="27.0" prefWidth="145.0" styleClass="menu" text="Processed Orders" textFill="WHITE">
+         <font>
+            <Font name="Arial" size="15.0" />
+         </font>
+      </Button>
+      <Button focusTraversable="false" layoutX="55.0" layoutY="234.0" mnemonicParsing="false" onAction="#handlePendingOrders" prefHeight="27.0" prefWidth="145.0" styleClass="menu" text="Pending Orders" textFill="WHITE">
+         <font>
+            <Font name="Arial" size="15.0" />
+         </font>
+      </Button>
+      <AnchorPane layoutX="266.0" prefHeight="539.0" prefWidth="616.0">
+         <children>
+            <TableView fx:id="tableViewOrders" fixedCellSize="0.0" layoutX="25.0" layoutY="14.0" prefHeight="512.0" prefWidth="566.0">
+               <columns>
+                  <TableColumn fx:id="tableColumnId" prefWidth="96.0" text="ID" />
+                  <TableColumn fx:id="tableColumnMedicineName" prefWidth="271.0" text="Medicine Name" />
+                  <TableColumn fx:id="tableColumnQuantity" prefWidth="197.0" text="Quantity" />
+               </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="857.0" prefHeight="539.0" prefWidth="131.0">
+         <children>
+            <Button fx:id="deliverButton" layoutX="34.0" layoutY="214.0" mnemonicParsing="false" onAction="#handleDeliverOrder" prefHeight="30.0" prefWidth="64.0" styleClass="functionality" text="Deliver">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="rejectButton" layoutX="34.0" layoutY="260.0" mnemonicParsing="false" onAction="#handleRejectOrder" prefHeight="30.0" prefWidth="64.0" styleClass="functionality" text="Reject">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

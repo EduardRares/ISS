@@ -2,9 +2,7 @@ package ro.iss2025.medicineorderingsystem.repository;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import ro.iss2025.medicineorderingsystem.domain.Medicine;
-import ro.iss2025.medicineorderingsystem.domain.Order;
-import ro.iss2025.medicineorderingsystem.domain.Status;
+import ro.iss2025.medicineorderingsystem.domain.*;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -27,10 +25,11 @@ public class OrderRepo implements OrderRepoInterface{
     public void add(Order entity) {
         logger.traceEntry("saving order {} ", entity);
         Connection conn= dbUtils.getConnection();
-        try(PreparedStatement preStmt = conn.prepareStatement("insert into order(medicineId, quantity, status) values (?, ?, ?)")) {
+        try(PreparedStatement preStmt = conn.prepareStatement("insert into 'order'(medicineId, employeeId, quantity, status) values (?, ?, ?, ?)")) {
             preStmt.setInt(1, entity.getMedicine().getId());
-            preStmt.setInt(2, entity.getQuantity());
-            preStmt.setString(3, entity.getStatus().toString());
+            preStmt.setInt(2, entity.getEmployee().getId());
+            preStmt.setInt(3, entity.getQuantity());
+            preStmt.setString(4, entity.getStatus().toString());
             int result=preStmt.executeUpdate();
             logger.trace("Saved {} instances", result);
         } catch (SQLException ex) {
@@ -43,7 +42,7 @@ public class OrderRepo implements OrderRepoInterface{
     public void update(Order entity) {
         logger.traceEntry("updating order {} ", entity);
         Connection conn= dbUtils.getConnection();
-        try(PreparedStatement preStmt = conn.prepareStatement("update order set status = ? where id=?")) {
+        try(PreparedStatement preStmt = conn.prepareStatement("update 'order' set status = ? where id=?")) {
             preStmt.setString(1, entity.getStatus().toString());
             preStmt.setInt(2, entity.getId());
             int result=preStmt.executeUpdate();
@@ -56,7 +55,16 @@ public class OrderRepo implements OrderRepoInterface{
 
     @Override
     public void delete(Order entity) {
-
+        logger.traceEntry("deleting order {} ", entity);
+        Connection conn= dbUtils.getConnection();
+        try(PreparedStatement preStmt = conn.prepareStatement("delete from 'order' where id=?")) {
+            preStmt.setInt(1, entity.getId());
+            int result=preStmt.executeUpdate();
+            logger.trace("Deleted {} instances", result);
+        } catch (SQLException ex) {
+            logger.error(ex);
+            System.err.println("Error DB" + ex);
+        }
     }
 
     @Override
@@ -64,18 +72,21 @@ public class OrderRepo implements OrderRepoInterface{
         logger.traceEntry();
         Connection conn= dbUtils.getConnection();
         List<Order> orders = new ArrayList<>();
-        try(PreparedStatement preStmt = conn.prepareStatement("select * from order")) {
+        try(PreparedStatement preStmt = conn.prepareStatement("select * from 'order'")) {
             try(ResultSet rs = preStmt.executeQuery()) {
                 while(rs.next()) {
                     int id = rs.getInt("id");
                     int medicineId = rs.getInt("medicineId");
+                    int employeeId = rs.getInt("employeeId");
                     int quantity = rs.getInt("quantity");
                     String status = rs.getString("status");
                     Medicine medicine = findMedicineById(medicineId);
+                    HospitalEmployee employee = findEmployeeById(employeeId);
                     Order order = new Order(medicine, quantity);
                     if("PENDING".equals(status)) order.setStatus(Status.PENDING);
                     if("DELIVERED".equals(status)) order.setStatus(Status.DELIVERED);
                     if("REJECTED".equals(status)) order.setStatus(Status.REJECTED);
+                    order.setEmployee(employee);
                     order.setId(id);
                     orders.add(order);
                 }
@@ -115,5 +126,92 @@ public class OrderRepo implements OrderRepoInterface{
             System.err.println("Error DB" + ex);
         }
         return null;
+    }
+
+    public HospitalEmployee findEmployeeById(Integer employeeId) {
+        logger.traceEntry();
+        Connection conn= dbUtils.getConnection();
+        try(PreparedStatement preStmt = conn.prepareStatement("select * from employee where id = ?")) {
+            preStmt.setInt(1, employeeId);
+            try(ResultSet rs = preStmt.executeQuery()) {
+                if(rs.next()) {
+                    int id = rs.getInt("id");
+                    String email = rs.getString("email");
+                    String password = rs.getString("password");
+                    String privilege = rs.getString("privilege");
+                    HospitalEmployee hospitalEmployee = new HospitalEmployee(email, password);
+                    if("ADMIN".equals(privilege)) hospitalEmployee.setPrivilege(Privilege.ADMIN);
+                    else if("MEDICAL_STAFF".equals(privilege)) hospitalEmployee.setPrivilege(Privilege.MEDICAL_STAFF);
+                    else if("PHARMACIST".equals(privilege)) hospitalEmployee.setPrivilege(Privilege.PHARMACIST);
+                    hospitalEmployee.setId(id);
+                    return hospitalEmployee;
+                }
+            }
+        } catch (SQLException ex) {
+            logger.error(ex);
+            System.err.println("Error DB" + ex);
+        }
+        return null;
+    }
+
+    @Override
+    public List<Order> findPendingOrders() {
+        logger.traceEntry();
+        Connection conn= dbUtils.getConnection();
+        List<Order> orders = new ArrayList<>();
+        try(PreparedStatement preStmt = conn.prepareStatement("select * from 'order' where status = 'PENDING'")) {
+            try(ResultSet rs = preStmt.executeQuery()) {
+                while(rs.next()) {
+                    int id = rs.getInt("id");
+                    int medicineId = rs.getInt("medicineId");
+                    int employeeId = rs.getInt("employeeId");
+                    int quantity = rs.getInt("quantity");
+                    String status = rs.getString("status");
+                    Medicine medicine = findMedicineById(medicineId);
+                    HospitalEmployee employee = findEmployeeById(employeeId);
+                    Order order = new Order(medicine, quantity);
+                    order.setStatus(Status.PENDING);
+                    order.setEmployee(employee);
+                    order.setId(id);
+                    orders.add(order);
+                }
+            }
+        } catch (SQLException ex) {
+            logger.error(ex);
+            System.err.println("Error DB" + ex);
+        }
+        logger.traceExit(orders);
+        return orders;
+    }
+
+    @Override
+    public List<Order> findProcessedOrders() {
+        logger.traceEntry();
+        Connection conn= dbUtils.getConnection();
+        List<Order> orders = new ArrayList<>();
+        try(PreparedStatement preStmt = conn.prepareStatement("select * from 'order' where status != 'PROCESSED'")) {
+            try(ResultSet rs = preStmt.executeQuery()) {
+                while(rs.next()) {
+                    int id = rs.getInt("id");
+                    int medicineId = rs.getInt("medicineId");
+                    int employeeId = rs.getInt("employeeId");
+                    int quantity = rs.getInt("quantity");
+                    String status = rs.getString("status");
+                    Medicine medicine = findMedicineById(medicineId);
+                    HospitalEmployee employee = findEmployeeById(employeeId);
+                    Order order = new Order(medicine, quantity);
+                    if("DELIVERED".equals(status)) order.setStatus(Status.DELIVERED);
+                    if("REJECTED".equals(status)) order.setStatus(Status.REJECTED);
+                    order.setEmployee(employee);
+                    order.setId(id);
+                    orders.add(order);
+                }
+            }
+        } catch (SQLException ex) {
+            logger.error(ex);
+            System.err.println("Error DB" + ex);
+        }
+        logger.traceExit(orders);
+        return orders;
     }
 }
