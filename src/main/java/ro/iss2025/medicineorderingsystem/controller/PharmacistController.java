@@ -18,6 +18,7 @@ import ro.iss2025.medicineorderingsystem.service.MedicineService;
 import ro.iss2025.medicineorderingsystem.service.OrderService;
 
 import java.nio.Buffer;
+import java.util.List;
 
 public class PharmacistController {
     @FXML
@@ -30,6 +31,8 @@ public class PharmacistController {
     private TableColumn<Order, String> tableColumnMedicineName;
     @FXML
     private TableColumn<Order, Integer> tableColumnQuantity;
+    @FXML
+    private TableColumn<Order, String> tableColumnDate;
     @FXML
     private TableView<Order> tableViewOrders;
     private HospitalEmployee user;
@@ -57,6 +60,7 @@ public class PharmacistController {
                 new SimpleStringProperty(cellData.getValue().getMedicine().getName())
         );
         tableColumnQuantity.setCellValueFactory(new PropertyValueFactory<>("quantity"));
+        tableColumnDate.setCellValueFactory(new PropertyValueFactory<>("orderDate"));
         tableViewOrders.getSelectionModel().selectedItemProperty().addListener((observable, oldValue, newValue) -> {
             order = tableViewOrders.getSelectionModel().getSelectedItem();
         });
@@ -69,7 +73,9 @@ public class PharmacistController {
         tableViewOrders.setVisible(true);
         tableViewOrders.setEditable(true);
         model.clear();
-        model.addAll(orderService.findPendingOrders());
+        List<Order> processedOrders = orderService.findPendingOrders();
+        processedOrders.sort((o1, o2) -> o1.getOrderDate().compareTo(o2.getOrderDate()));
+        model.addAll(processedOrders);
         tableViewOrders.setItems(model);
     }
 
@@ -80,7 +86,9 @@ public class PharmacistController {
         tableViewOrders.setVisible(true);
         tableViewOrders.setDisable(false);
         model.clear();
-        model.addAll(orderService.findProcessedOrders());
+        List<Order> processedOrders = orderService.findProcessedOrders();
+        processedOrders.sort((o1, o2) -> o1.getOrderDate().compareTo(o2.getOrderDate()));
+        model.addAll(processedOrders);
         tableViewOrders.setItems(model);
     }
 

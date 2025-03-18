@@ -8,6 +8,7 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
@@ -25,11 +26,12 @@ public class OrderRepo implements OrderRepoInterface{
     public void add(Order entity) {
         logger.traceEntry("saving order {} ", entity);
         Connection conn= dbUtils.getConnection();
-        try(PreparedStatement preStmt = conn.prepareStatement("insert into 'order'(medicineId, employeeId, quantity, status) values (?, ?, ?, ?)")) {
+        try(PreparedStatement preStmt = conn.prepareStatement("insert into 'order'(medicineId, employeeId, quantity, status, orderDate) values (?, ?, ?, ?, ?)")) {
             preStmt.setInt(1, entity.getMedicine().getId());
             preStmt.setInt(2, entity.getEmployee().getId());
             preStmt.setInt(3, entity.getQuantity());
             preStmt.setString(4, entity.getStatus().toString());
+            preStmt.setDate(5, new java.sql.Date(entity.getOrderDate().toLocalDate().toEpochDay()));
             int result=preStmt.executeUpdate();
             logger.trace("Saved {} instances", result);
         } catch (SQLException ex) {
@@ -80,9 +82,10 @@ public class OrderRepo implements OrderRepoInterface{
                     int employeeId = rs.getInt("employeeId");
                     int quantity = rs.getInt("quantity");
                     String status = rs.getString("status");
+                    LocalDateTime orderDate = rs.getTimestamp("orderDate").toLocalDateTime();
                     Medicine medicine = findMedicineById(medicineId);
                     HospitalEmployee employee = findEmployeeById(employeeId);
-                    Order order = new Order(medicine, quantity);
+                    Order order = new Order(medicine, quantity, orderDate);
                     if("PENDING".equals(status)) order.setStatus(Status.PENDING);
                     if("DELIVERED".equals(status)) order.setStatus(Status.DELIVERED);
                     if("REJECTED".equals(status)) order.setStatus(Status.REJECTED);
@@ -167,9 +170,10 @@ public class OrderRepo implements OrderRepoInterface{
                     int employeeId = rs.getInt("employeeId");
                     int quantity = rs.getInt("quantity");
                     String status = rs.getString("status");
+                    LocalDateTime orderDate = rs.getTimestamp("orderDate").toLocalDateTime();
                     Medicine medicine = findMedicineById(medicineId);
                     HospitalEmployee employee = findEmployeeById(employeeId);
-                    Order order = new Order(medicine, quantity);
+                    Order order = new Order(medicine, quantity, orderDate);
                     order.setStatus(Status.PENDING);
                     order.setEmployee(employee);
                     order.setId(id);
@@ -189,7 +193,7 @@ public class OrderRepo implements OrderRepoInterface{
         logger.traceEntry();
         Connection conn= dbUtils.getConnection();
         List<Order> orders = new ArrayList<>();
-        try(PreparedStatement preStmt = conn.prepareStatement("select * from 'order' where status != 'PROCESSED'")) {
+        try(PreparedStatement preStmt = conn.prepareStatement("select * from 'order' where status != 'PENDING'")) {
             try(ResultSet rs = preStmt.executeQuery()) {
                 while(rs.next()) {
                     int id = rs.getInt("id");
@@ -197,9 +201,10 @@ public class OrderRepo implements OrderRepoInterface{
                     int employeeId = rs.getInt("employeeId");
                     int quantity = rs.getInt("quantity");
                     String status = rs.getString("status");
+                    LocalDateTime orderDate = rs.getTimestamp("orderDate").toLocalDateTime();
                     Medicine medicine = findMedicineById(medicineId);
                     HospitalEmployee employee = findEmployeeById(employeeId);
-                    Order order = new Order(medicine, quantity);
+                    Order order = new Order(medicine, quantity, orderDate);
                     if("DELIVERED".equals(status)) order.setStatus(Status.DELIVERED);
                     if("REJECTED".equals(status)) order.setStatus(Status.REJECTED);
                     order.setEmployee(employee);

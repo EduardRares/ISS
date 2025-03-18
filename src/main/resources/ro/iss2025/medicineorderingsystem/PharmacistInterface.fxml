@@ -30,8 +30,9 @@
             <TableView fx:id="tableViewOrders" fixedCellSize="0.0" layoutX="25.0" layoutY="14.0" prefHeight="512.0" prefWidth="566.0">
                <columns>
                   <TableColumn fx:id="tableColumnId" prefWidth="96.0" text="ID" />
-                  <TableColumn fx:id="tableColumnMedicineName" prefWidth="271.0" text="Medicine Name" />
-                  <TableColumn fx:id="tableColumnQuantity" prefWidth="197.0" text="Quantity" />
+                  <TableColumn fx:id="tableColumnMedicineName" prefWidth="211.0" text="Medicine Name" />
+                  <TableColumn fx:id="tableColumnQuantity" prefWidth="97.0" text="Quantity" />
+                  <TableColumn fx:id="tableColumnDate" prefWidth="160.0" text="Date" />
                </columns>
             </TableView>
          </children>
