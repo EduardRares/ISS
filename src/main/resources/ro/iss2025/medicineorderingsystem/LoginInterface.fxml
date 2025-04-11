@@ -36,7 +36,7 @@
             <Font name="System Bold" size="13.0" />
          </font>
       </Label>
-      <Button onAction="#login" layoutX="394.0" layoutY="365.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="100.0" text=" Log In" textAlignment="CENTER" />
+      <Button styleClass="login" onAction="#login" layoutX="394.0" layoutY="365.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="100.0" text=" Log In" textAlignment="CENTER" />
       <Label layoutX="394.0" layoutY="138.0" prefHeight="48.0" prefWidth="399.0" text="Log into Medicine Ordering System">
          <font>
             <Font name="System Bold" size="23.0" />
@@ -50,5 +50,6 @@
             <Font name="System Bold" size="13.0" />
          </font>
       </Label>
+      <Button styleClass="newAcc" layoutX="699.0" layoutY="21.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="110.0" text="Create Account" />
    </children>
 </AnchorPane>

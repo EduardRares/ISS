@@ -34,11 +34,6 @@ public class LoginController {
         this.orderService = orderService;
     }
 
-    @FXML
-    protected void onHelloButtonClick() {
-        welcomeText.setText("Welcome to JavaFX Application!");
-    }
-
     public void login(ActionEvent actionEvent) throws IOException {
         HospitalEmployee hospitalEmployee = new HospitalEmployee(emailText.getText(), passwordText.getText());
         Optional<HospitalEmployee> hospitalEmployee1 = hospitalEmployeeService.findEmployeeByCredentials(hospitalEmployee);
