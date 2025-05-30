@@ -6,10 +6,7 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 import ro.iss2025.medicineorderingsystem.controller.AdminController;
 import ro.iss2025.medicineorderingsystem.controller.LoginController;
-import ro.iss2025.medicineorderingsystem.repository.HospitalEmployeeRepo;
-import ro.iss2025.medicineorderingsystem.repository.MedicineRepo;
-import ro.iss2025.medicineorderingsystem.repository.MedicineRepoInterface;
-import ro.iss2025.medicineorderingsystem.repository.OrderRepo;
+import ro.iss2025.medicineorderingsystem.repository.*;
 import ro.iss2025.medicineorderingsystem.service.HospitalEmployeeService;
 import ro.iss2025.medicineorderingsystem.service.MedicineService;
 import ro.iss2025.medicineorderingsystem.service.OrderService;
@@ -31,9 +28,9 @@ public class Main extends Application {
         } catch (IOException e) {
             System.out.println("Cannot find bd.config "+e);
         }
-        hospitalEmployeeService = new HospitalEmployeeService(new HospitalEmployeeRepo(props));
-        medicineService = new MedicineService(new MedicineRepo(props));
-        orderService = new OrderService(new OrderRepo(props));
+        hospitalEmployeeService = new HospitalEmployeeService(new HospitalEmployeeHibernateRepo());
+        medicineService = new MedicineService(new MedicineHibernateRepo());
+        orderService = new OrderService(new OrderHibernateRepo());
 
         initLoginView(stage);
 

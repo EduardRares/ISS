@@ -95,3 +95,783 @@
 11 Apr 2025 14:56:48,917 INFO  ro.iss2025.medicineorderingsystem.repository.JdbcUtils 32 getNewConnection - pass: null
 11 Apr 2025 14:56:48,920 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@48601e87)
 11 Apr 2025 14:56:48,925 TRACE ro.iss2025.medicineorderingsystem.repository.MedicineRepo 91 findAll - Exit with([Medicine{name=Nurofen Forte, type=AINS, description=Nurofen Forte este utilizat pentru a calma durerile usoare pana la moderate, cum sunt durerea de cap, incluzand migrena, durerea de dinti, durerea menstruala si a reduce febra.}, Medicine{name=Aspacardin, type=supliment mineral, description=Aspacardin este un supliment alimentar pe bază de potasiu și magneziu. Acţionează asupra inimii şi vaselor de sânge, fiind utilizat ca terapie adjuvantă în boala coronariană, tulburări de ritm cadiac şi pentru prevenţia tulburărilor de ritm cardiac care pot să apară după anumite tratamente medicamentoase.}])
+11 Apr 2025 15:23:10,202 INFO  ro.iss2025.medicineorderingsystem.repository.HospitalEmployeeRepo 22 <init> - Initializing HospitalEmployeeRepo with properties: {URL=jdbc:sqlite:D://Faculta//ISS//MedicineOrderingSystem//src//main//resources//ro//iss2025//medicineorderingsystem//SQLiteDb.db} 
+11 Apr 2025 15:23:10,207 INFO  ro.iss2025.medicineorderingsystem.repository.MedicineRepo 19 <init> - Initializing MedicineRepo with properties: {URL=jdbc:sqlite:D://Faculta//ISS//MedicineOrderingSystem//src//main//resources//ro//iss2025//medicineorderingsystem//SQLiteDb.db} 
+11 Apr 2025 15:23:10,209 INFO  ro.iss2025.medicineorderingsystem.repository.OrderRepo 21 <init> - Initializing OrderRepo with properties: {URL=jdbc:sqlite:D://Faculta//ISS//MedicineOrderingSystem//src//main//resources//ro//iss2025//medicineorderingsystem//SQLiteDb.db} 
+11 Apr 2025 15:23:48,683 TRACE ro.iss2025.medicineorderingsystem.repository.HospitalEmployeeRepo 108 findByCredentials - Enter
+11 Apr 2025 15:23:48,684 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:23:48,685 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 25 getNewConnection - Enter
+11 Apr 2025 15:23:48,686 INFO  ro.iss2025.medicineorderingsystem.repository.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:D://Faculta//ISS//MedicineOrderingSystem//src//main//resources//ro//iss2025//medicineorderingsystem//SQLiteDb.db
+11 Apr 2025 15:23:48,688 INFO  ro.iss2025.medicineorderingsystem.repository.JdbcUtils 31 getNewConnection - user: null
+11 Apr 2025 15:23:48,689 INFO  ro.iss2025.medicineorderingsystem.repository.JdbcUtils 32 getNewConnection - pass: null
+11 Apr 2025 15:23:49,028 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@4b3abfc9)
+11 Apr 2025 15:23:49,037 TRACE ro.iss2025.medicineorderingsystem.repository.HospitalEmployeeRepo 121 findByCredentials - Exit with(ro.iss2025.medicineorderingsystem.domain.HospitalEmployee@55e0ed61)
+11 Apr 2025 15:24:34,247 TRACE ro.iss2025.medicineorderingsystem.repository.HospitalEmployeeRepo 75 findAll - Enter
+11 Apr 2025 15:24:34,248 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:24:34,249 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@4b3abfc9)
+11 Apr 2025 15:24:34,253 TRACE ro.iss2025.medicineorderingsystem.repository.HospitalEmployeeRepo 97 findAll - Exit with([ro.iss2025.medicineorderingsystem.domain.HospitalEmployee@678b28b1, ro.iss2025.medicineorderingsystem.domain.HospitalEmployee@51607638, ro.iss2025.medicineorderingsystem.domain.HospitalEmployee@7b8a9276])
+11 Apr 2025 15:24:35,541 TRACE ro.iss2025.medicineorderingsystem.repository.MedicineRepo 72 findAll - Enter
+11 Apr 2025 15:24:35,542 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:24:35,543 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 25 getNewConnection - Enter
+11 Apr 2025 15:24:35,544 INFO  ro.iss2025.medicineorderingsystem.repository.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:D://Faculta//ISS//MedicineOrderingSystem//src//main//resources//ro//iss2025//medicineorderingsystem//SQLiteDb.db
+11 Apr 2025 15:24:35,545 INFO  ro.iss2025.medicineorderingsystem.repository.JdbcUtils 31 getNewConnection - user: null
+11 Apr 2025 15:24:35,546 INFO  ro.iss2025.medicineorderingsystem.repository.JdbcUtils 32 getNewConnection - pass: null
+11 Apr 2025 15:24:35,549 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@7b67bc63)
+11 Apr 2025 15:24:35,554 TRACE ro.iss2025.medicineorderingsystem.repository.MedicineRepo 91 findAll - Exit with([Medicine{name=Nurofen Forte, type=AINS, description=Nurofen Forte este utilizat pentru a calma durerile usoare pana la moderate, cum sunt durerea de cap, incluzand migrena, durerea de dinti, durerea menstruala si a reduce febra.}, Medicine{name=Aspacardin, type=supliment mineral, description=Aspacardin este un supliment alimentar pe bază de potasiu și magneziu. Acţionează asupra inimii şi vaselor de sânge, fiind utilizat ca terapie adjuvantă în boala coronariană, tulburări de ritm cadiac şi pentru prevenţia tulburărilor de ritm cardiac care pot să apară după anumite tratamente medicamentoase.}])
+11 Apr 2025 15:25:09,751 TRACE ro.iss2025.medicineorderingsystem.repository.MedicineRepo 72 findAll - Enter
+11 Apr 2025 15:25:09,752 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:25:09,753 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@7b67bc63)
+11 Apr 2025 15:25:09,755 TRACE ro.iss2025.medicineorderingsystem.repository.MedicineRepo 91 findAll - Exit with([Medicine{name=Nurofen Forte, type=AINS, description=Nurofen Forte este utilizat pentru a calma durerile usoare pana la moderate, cum sunt durerea de cap, incluzand migrena, durerea de dinti, durerea menstruala si a reduce febra.}, Medicine{name=Aspacardin, type=supliment mineral, description=Aspacardin este un supliment alimentar pe bază de potasiu și magneziu. Acţionează asupra inimii şi vaselor de sânge, fiind utilizat ca terapie adjuvantă în boala coronariană, tulburări de ritm cadiac şi pentru prevenţia tulburărilor de ritm cardiac care pot să apară după anumite tratamente medicamentoase.}])
+11 Apr 2025 15:25:18,078 TRACE ro.iss2025.medicineorderingsystem.repository.HospitalEmployeeRepo 75 findAll - Enter
+11 Apr 2025 15:25:18,079 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:25:18,080 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@4b3abfc9)
+11 Apr 2025 15:25:18,082 TRACE ro.iss2025.medicineorderingsystem.repository.HospitalEmployeeRepo 97 findAll - Exit with([ro.iss2025.medicineorderingsystem.domain.HospitalEmployee@443aa39d, ro.iss2025.medicineorderingsystem.domain.HospitalEmployee@1db77f9, ro.iss2025.medicineorderingsystem.domain.HospitalEmployee@5af254cc])
+11 Apr 2025 15:25:30,464 TRACE ro.iss2025.medicineorderingsystem.repository.HospitalEmployeeRepo 108 findByCredentials - Enter
+11 Apr 2025 15:25:30,466 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:25:30,467 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@4b3abfc9)
+11 Apr 2025 15:25:30,469 TRACE ro.iss2025.medicineorderingsystem.repository.HospitalEmployeeRepo 121 findByCredentials - Exit with(ro.iss2025.medicineorderingsystem.domain.HospitalEmployee@68dfbdc8)
+11 Apr 2025 15:25:31,663 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 162 findPendingOrders - Enter
+11 Apr 2025 15:25:31,664 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:25:31,665 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 25 getNewConnection - Enter
+11 Apr 2025 15:25:31,666 INFO  ro.iss2025.medicineorderingsystem.repository.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:D://Faculta//ISS//MedicineOrderingSystem//src//main//resources//ro//iss2025//medicineorderingsystem//SQLiteDb.db
+11 Apr 2025 15:25:31,667 INFO  ro.iss2025.medicineorderingsystem.repository.JdbcUtils 31 getNewConnection - user: null
+11 Apr 2025 15:25:31,668 INFO  ro.iss2025.medicineorderingsystem.repository.JdbcUtils 32 getNewConnection - pass: null
+11 Apr 2025 15:25:31,671 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:25:31,679 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 112 findMedicineById - Enter
+11 Apr 2025 15:25:31,680 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:25:31,681 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:25:31,683 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 135 findEmployeeById - Enter
+11 Apr 2025 15:25:31,684 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:25:31,685 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:25:31,688 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 112 findMedicineById - Enter
+11 Apr 2025 15:25:31,689 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:25:31,691 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:25:31,692 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 135 findEmployeeById - Enter
+11 Apr 2025 15:25:31,693 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:25:31,694 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:25:31,698 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 112 findMedicineById - Enter
+11 Apr 2025 15:25:31,699 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:25:31,699 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:25:31,701 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 135 findEmployeeById - Enter
+11 Apr 2025 15:25:31,701 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:25:31,702 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:25:31,704 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 112 findMedicineById - Enter
+11 Apr 2025 15:25:31,705 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:25:31,706 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:25:31,708 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 135 findEmployeeById - Enter
+11 Apr 2025 15:25:31,709 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:25:31,711 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:25:31,713 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 112 findMedicineById - Enter
+11 Apr 2025 15:25:31,714 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:25:31,716 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:25:31,718 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 135 findEmployeeById - Enter
+11 Apr 2025 15:25:31,718 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:25:31,719 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:25:31,720 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 112 findMedicineById - Enter
+11 Apr 2025 15:25:31,721 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:25:31,722 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:25:31,724 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 135 findEmployeeById - Enter
+11 Apr 2025 15:25:31,725 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:25:31,726 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:25:31,728 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 112 findMedicineById - Enter
+11 Apr 2025 15:25:31,729 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:25:31,730 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:25:31,731 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 135 findEmployeeById - Enter
+11 Apr 2025 15:25:31,732 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:25:31,733 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:25:31,735 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 112 findMedicineById - Enter
+11 Apr 2025 15:25:31,736 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:25:31,737 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:25:31,738 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 135 findEmployeeById - Enter
+11 Apr 2025 15:25:31,739 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:25:31,740 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:25:31,741 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 112 findMedicineById - Enter
+11 Apr 2025 15:25:31,742 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:25:31,743 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:25:31,743 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 135 findEmployeeById - Enter
+11 Apr 2025 15:25:31,744 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:25:31,744 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:25:31,745 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 112 findMedicineById - Enter
+11 Apr 2025 15:25:31,746 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:25:31,747 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:25:31,747 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 135 findEmployeeById - Enter
+11 Apr 2025 15:25:31,748 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:25:31,748 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:25:31,749 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 187 findPendingOrders - Exit with([ro.iss2025.medicineorderingsystem.domain.Order@7c5b8834, ro.iss2025.medicineorderingsystem.domain.Order@56eb3040, ro.iss2025.medicineorderingsystem.domain.Order@2bd4e3e, ro.iss2025.medicineorderingsystem.domain.Order@335cd3e0, ro.iss2025.medicineorderingsystem.domain.Order@13e6f797, ro.iss2025.medicineorderingsystem.domain.Order@1c00ac9b, ro.iss2025.medicineorderingsystem.domain.Order@74a4cd9b, ro.iss2025.medicineorderingsystem.domain.Order@2132c33c, ro.iss2025.medicineorderingsystem.domain.Order@54cc2c2, ro.iss2025.medicineorderingsystem.domain.Order@1cb1c284])
+11 Apr 2025 15:25:34,552 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 193 findProcessedOrders - Enter
+11 Apr 2025 15:25:34,553 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:25:34,554 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:25:34,555 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 112 findMedicineById - Enter
+11 Apr 2025 15:25:34,556 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:25:34,557 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:25:34,558 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 135 findEmployeeById - Enter
+11 Apr 2025 15:25:34,559 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:25:34,559 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:25:34,561 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 219 findProcessedOrders - Exit with([ro.iss2025.medicineorderingsystem.domain.Order@57a86dd])
+11 Apr 2025 15:25:36,810 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 162 findPendingOrders - Enter
+11 Apr 2025 15:25:36,811 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:25:36,812 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:25:36,814 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 112 findMedicineById - Enter
+11 Apr 2025 15:25:36,815 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:25:36,815 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:25:36,817 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 135 findEmployeeById - Enter
+11 Apr 2025 15:25:36,818 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:25:36,818 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:25:36,820 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 112 findMedicineById - Enter
+11 Apr 2025 15:25:36,821 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:25:36,822 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:25:36,823 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 135 findEmployeeById - Enter
+11 Apr 2025 15:25:36,823 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:25:36,824 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:25:36,826 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 112 findMedicineById - Enter
+11 Apr 2025 15:25:36,827 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:25:36,828 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:25:36,829 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 135 findEmployeeById - Enter
+11 Apr 2025 15:25:36,830 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:25:36,830 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:25:36,832 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 112 findMedicineById - Enter
+11 Apr 2025 15:25:36,832 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:25:36,833 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:25:36,834 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 135 findEmployeeById - Enter
+11 Apr 2025 15:25:36,835 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:25:36,835 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:25:36,836 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 112 findMedicineById - Enter
+11 Apr 2025 15:25:36,837 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:25:36,838 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:25:36,839 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 135 findEmployeeById - Enter
+11 Apr 2025 15:25:36,840 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:25:36,840 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:25:36,841 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 112 findMedicineById - Enter
+11 Apr 2025 15:25:36,842 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:25:36,843 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:25:36,844 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 135 findEmployeeById - Enter
+11 Apr 2025 15:25:36,844 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:25:36,845 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:25:36,846 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 112 findMedicineById - Enter
+11 Apr 2025 15:25:36,847 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:25:36,848 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:25:36,850 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 135 findEmployeeById - Enter
+11 Apr 2025 15:25:36,851 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:25:36,852 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:25:36,853 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 112 findMedicineById - Enter
+11 Apr 2025 15:25:36,853 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:25:36,854 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:25:36,857 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 135 findEmployeeById - Enter
+11 Apr 2025 15:25:36,857 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:25:36,858 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:25:36,859 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 112 findMedicineById - Enter
+11 Apr 2025 15:25:36,860 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:25:36,860 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:25:36,861 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 135 findEmployeeById - Enter
+11 Apr 2025 15:25:36,862 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:25:36,863 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:25:36,864 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 112 findMedicineById - Enter
+11 Apr 2025 15:25:36,864 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:25:36,865 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:25:36,866 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 135 findEmployeeById - Enter
+11 Apr 2025 15:25:36,866 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:25:36,867 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:25:36,868 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 187 findPendingOrders - Exit with([ro.iss2025.medicineorderingsystem.domain.Order@79e533f0, ro.iss2025.medicineorderingsystem.domain.Order@28780e7f, ro.iss2025.medicineorderingsystem.domain.Order@449f3766, ro.iss2025.medicineorderingsystem.domain.Order@3d323b26, ro.iss2025.medicineorderingsystem.domain.Order@6d98e5c3, ro.iss2025.medicineorderingsystem.domain.Order@57b15f9, ro.iss2025.medicineorderingsystem.domain.Order@38e22637, ro.iss2025.medicineorderingsystem.domain.Order@1425c106, ro.iss2025.medicineorderingsystem.domain.Order@3e3988bc, ro.iss2025.medicineorderingsystem.domain.Order@63b0965f])
+11 Apr 2025 15:25:43,615 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 45 update - Enter updating order ro.iss2025.medicineorderingsystem.domain.Order@6d98e5c3 
+11 Apr 2025 15:25:43,616 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:25:43,616 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:25:43,637 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 51 update - Updated 1 instances
+11 Apr 2025 15:25:43,643 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 162 findPendingOrders - Enter
+11 Apr 2025 15:25:43,643 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:25:43,644 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:25:43,645 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 112 findMedicineById - Enter
+11 Apr 2025 15:25:43,646 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:25:43,646 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:25:43,647 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 135 findEmployeeById - Enter
+11 Apr 2025 15:25:43,647 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:25:43,648 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:25:43,649 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 112 findMedicineById - Enter
+11 Apr 2025 15:25:43,650 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:25:43,650 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:25:43,651 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 135 findEmployeeById - Enter
+11 Apr 2025 15:25:43,651 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:25:43,652 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:25:43,652 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 112 findMedicineById - Enter
+11 Apr 2025 15:25:43,653 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:25:43,653 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:25:43,653 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 135 findEmployeeById - Enter
+11 Apr 2025 15:25:43,654 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:25:43,654 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:25:43,655 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 112 findMedicineById - Enter
+11 Apr 2025 15:25:43,655 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:25:43,656 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:25:43,656 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 135 findEmployeeById - Enter
+11 Apr 2025 15:25:43,656 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:25:43,657 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:25:43,657 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 112 findMedicineById - Enter
+11 Apr 2025 15:25:43,658 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:25:43,658 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:25:43,659 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 135 findEmployeeById - Enter
+11 Apr 2025 15:25:43,659 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:25:43,659 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:25:43,660 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 112 findMedicineById - Enter
+11 Apr 2025 15:25:43,660 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:25:43,660 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:25:43,661 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 135 findEmployeeById - Enter
+11 Apr 2025 15:25:43,661 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:25:43,662 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:25:43,662 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 112 findMedicineById - Enter
+11 Apr 2025 15:25:43,663 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:25:43,663 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:25:43,663 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 135 findEmployeeById - Enter
+11 Apr 2025 15:25:43,664 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:25:43,664 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:25:43,665 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 112 findMedicineById - Enter
+11 Apr 2025 15:25:43,665 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:25:43,665 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:25:43,666 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 135 findEmployeeById - Enter
+11 Apr 2025 15:25:43,666 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:25:43,666 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:25:43,667 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 112 findMedicineById - Enter
+11 Apr 2025 15:25:43,668 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:25:43,668 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:25:43,668 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 135 findEmployeeById - Enter
+11 Apr 2025 15:25:43,668 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:25:43,669 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:25:43,669 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 187 findPendingOrders - Exit with([ro.iss2025.medicineorderingsystem.domain.Order@49bbf9b1, ro.iss2025.medicineorderingsystem.domain.Order@3aebe5a4, ro.iss2025.medicineorderingsystem.domain.Order@1a44ea52, ro.iss2025.medicineorderingsystem.domain.Order@6a5ff619, ro.iss2025.medicineorderingsystem.domain.Order@7cbfec92, ro.iss2025.medicineorderingsystem.domain.Order@191ce064, ro.iss2025.medicineorderingsystem.domain.Order@24378f6f, ro.iss2025.medicineorderingsystem.domain.Order@31cd5ace, ro.iss2025.medicineorderingsystem.domain.Order@3295fb19])
+11 Apr 2025 15:25:43,672 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 162 findPendingOrders - Enter
+11 Apr 2025 15:25:43,672 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:25:43,673 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:25:43,673 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 112 findMedicineById - Enter
+11 Apr 2025 15:25:43,673 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:25:43,674 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:25:43,674 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 135 findEmployeeById - Enter
+11 Apr 2025 15:25:43,675 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:25:43,675 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:25:43,675 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 112 findMedicineById - Enter
+11 Apr 2025 15:25:43,675 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:25:43,676 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:25:43,676 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 135 findEmployeeById - Enter
+11 Apr 2025 15:25:43,676 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:25:43,676 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:25:43,676 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 112 findMedicineById - Enter
+11 Apr 2025 15:25:43,677 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:25:43,677 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:25:43,677 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 135 findEmployeeById - Enter
+11 Apr 2025 15:25:43,677 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:25:43,677 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:25:43,678 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 112 findMedicineById - Enter
+11 Apr 2025 15:25:43,678 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:25:43,678 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:25:43,678 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 135 findEmployeeById - Enter
+11 Apr 2025 15:25:43,678 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:25:43,679 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:25:43,679 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 112 findMedicineById - Enter
+11 Apr 2025 15:25:43,679 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:25:43,679 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:25:43,680 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 135 findEmployeeById - Enter
+11 Apr 2025 15:25:43,680 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:25:43,680 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:25:43,681 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 112 findMedicineById - Enter
+11 Apr 2025 15:25:43,681 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:25:43,681 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:25:43,682 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 135 findEmployeeById - Enter
+11 Apr 2025 15:25:43,682 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:25:43,682 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:25:43,682 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 112 findMedicineById - Enter
+11 Apr 2025 15:25:43,682 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:25:43,683 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:25:43,683 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 135 findEmployeeById - Enter
+11 Apr 2025 15:25:43,683 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:25:43,683 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:25:43,684 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 112 findMedicineById - Enter
+11 Apr 2025 15:25:43,684 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:25:43,684 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:25:43,684 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 135 findEmployeeById - Enter
+11 Apr 2025 15:25:43,684 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:25:43,685 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:25:43,685 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 112 findMedicineById - Enter
+11 Apr 2025 15:25:43,685 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:25:43,685 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:25:43,686 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 135 findEmployeeById - Enter
+11 Apr 2025 15:25:43,686 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:25:43,686 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:25:43,686 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 187 findPendingOrders - Exit with([ro.iss2025.medicineorderingsystem.domain.Order@fe0ab89, ro.iss2025.medicineorderingsystem.domain.Order@12b0c45f, ro.iss2025.medicineorderingsystem.domain.Order@7fbe7fac, ro.iss2025.medicineorderingsystem.domain.Order@2fc99fea, ro.iss2025.medicineorderingsystem.domain.Order@25ffd579, ro.iss2025.medicineorderingsystem.domain.Order@31797fa5, ro.iss2025.medicineorderingsystem.domain.Order@3db62539, ro.iss2025.medicineorderingsystem.domain.Order@5e63cbaa, ro.iss2025.medicineorderingsystem.domain.Order@5ec8902])
+11 Apr 2025 15:25:45,036 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 193 findProcessedOrders - Enter
+11 Apr 2025 15:25:45,037 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:25:45,038 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:25:45,039 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 112 findMedicineById - Enter
+11 Apr 2025 15:25:45,040 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:25:45,040 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:25:45,041 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 135 findEmployeeById - Enter
+11 Apr 2025 15:25:45,042 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:25:45,043 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:25:45,044 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 112 findMedicineById - Enter
+11 Apr 2025 15:25:45,045 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:25:45,045 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:25:45,046 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 135 findEmployeeById - Enter
+11 Apr 2025 15:25:45,047 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:25:45,047 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:25:45,047 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 219 findProcessedOrders - Exit with([ro.iss2025.medicineorderingsystem.domain.Order@d859585, ro.iss2025.medicineorderingsystem.domain.Order@8e803bc])
+11 Apr 2025 15:25:56,845 TRACE ro.iss2025.medicineorderingsystem.repository.HospitalEmployeeRepo 108 findByCredentials - Enter
+11 Apr 2025 15:25:56,846 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:25:56,847 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@4b3abfc9)
+11 Apr 2025 15:25:56,848 TRACE ro.iss2025.medicineorderingsystem.repository.HospitalEmployeeRepo 121 findByCredentials - Exit with(ro.iss2025.medicineorderingsystem.domain.HospitalEmployee@334d53a8)
+11 Apr 2025 15:25:57,954 TRACE ro.iss2025.medicineorderingsystem.repository.MedicineRepo 72 findAll - Enter
+11 Apr 2025 15:25:57,955 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:25:57,955 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@7b67bc63)
+11 Apr 2025 15:25:57,957 TRACE ro.iss2025.medicineorderingsystem.repository.MedicineRepo 91 findAll - Exit with([Medicine{name=Nurofen Forte, type=AINS, description=Nurofen Forte este utilizat pentru a calma durerile usoare pana la moderate, cum sunt durerea de cap, incluzand migrena, durerea de dinti, durerea menstruala si a reduce febra.}, Medicine{name=Aspacardin, type=supliment mineral, description=Aspacardin este un supliment alimentar pe bază de potasiu și magneziu. Acţionează asupra inimii şi vaselor de sânge, fiind utilizat ca terapie adjuvantă în boala coronariană, tulburări de ritm cadiac şi pentru prevenţia tulburărilor de ritm cardiac care pot să apară după anumite tratamente medicamentoase.}])
+11 Apr 2025 15:26:03,548 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 27 add - Enter saving order ro.iss2025.medicineorderingsystem.domain.Order@302d8d89 
+11 Apr 2025 15:26:03,550 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:26:03,551 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:26:03,566 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 36 add - Saved 1 instances
+11 Apr 2025 15:26:03,570 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 225 findOrdersByEmployeeId - Enter
+11 Apr 2025 15:26:03,571 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:26:03,571 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:26:03,573 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 112 findMedicineById - Enter
+11 Apr 2025 15:26:03,573 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:26:03,574 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:26:03,574 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 135 findEmployeeById - Enter
+11 Apr 2025 15:26:03,575 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:26:03,575 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:26:03,576 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 112 findMedicineById - Enter
+11 Apr 2025 15:26:03,577 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:26:03,577 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:26:03,578 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 135 findEmployeeById - Enter
+11 Apr 2025 15:26:03,578 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:26:03,579 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:26:03,580 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 112 findMedicineById - Enter
+11 Apr 2025 15:26:03,580 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:26:03,580 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:26:03,581 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 135 findEmployeeById - Enter
+11 Apr 2025 15:26:03,581 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:26:03,582 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:26:03,583 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 112 findMedicineById - Enter
+11 Apr 2025 15:26:03,583 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:26:03,583 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:26:03,584 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 135 findEmployeeById - Enter
+11 Apr 2025 15:26:03,585 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:26:03,585 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:26:03,587 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 112 findMedicineById - Enter
+11 Apr 2025 15:26:03,587 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:26:03,588 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:26:03,589 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 135 findEmployeeById - Enter
+11 Apr 2025 15:26:03,589 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:26:03,589 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:26:03,590 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 112 findMedicineById - Enter
+11 Apr 2025 15:26:03,591 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:26:03,591 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:26:03,592 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 135 findEmployeeById - Enter
+11 Apr 2025 15:26:03,592 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:26:03,593 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:26:03,594 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 112 findMedicineById - Enter
+11 Apr 2025 15:26:03,594 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:26:03,594 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:26:03,595 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 135 findEmployeeById - Enter
+11 Apr 2025 15:26:03,596 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:26:03,596 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:26:03,597 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 112 findMedicineById - Enter
+11 Apr 2025 15:26:03,597 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:26:03,598 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:26:03,599 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 135 findEmployeeById - Enter
+11 Apr 2025 15:26:03,599 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:26:03,600 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:26:03,601 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 112 findMedicineById - Enter
+11 Apr 2025 15:26:03,601 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:26:03,602 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:26:03,603 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 135 findEmployeeById - Enter
+11 Apr 2025 15:26:03,603 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:26:03,604 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:26:03,605 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 112 findMedicineById - Enter
+11 Apr 2025 15:26:03,605 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:26:03,606 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:26:03,607 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 135 findEmployeeById - Enter
+11 Apr 2025 15:26:03,607 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:26:03,608 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:26:03,609 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 251 findOrdersByEmployeeId - Exit with([ro.iss2025.medicineorderingsystem.domain.Order@6806272f, ro.iss2025.medicineorderingsystem.domain.Order@4bc51b1, ro.iss2025.medicineorderingsystem.domain.Order@ea3a3a6, ro.iss2025.medicineorderingsystem.domain.Order@55f60c93, ro.iss2025.medicineorderingsystem.domain.Order@c90765d, ro.iss2025.medicineorderingsystem.domain.Order@6a478fa7, ro.iss2025.medicineorderingsystem.domain.Order@796aafda, ro.iss2025.medicineorderingsystem.domain.Order@1c9db6f0, ro.iss2025.medicineorderingsystem.domain.Order@13b019a0, ro.iss2025.medicineorderingsystem.domain.Order@45dc86c6])
+11 Apr 2025 15:26:04,996 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 225 findOrdersByEmployeeId - Enter
+11 Apr 2025 15:26:04,997 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:26:04,997 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:26:04,998 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 112 findMedicineById - Enter
+11 Apr 2025 15:26:04,999 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:26:04,999 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:26:05,000 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 135 findEmployeeById - Enter
+11 Apr 2025 15:26:05,000 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:26:05,001 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:26:05,001 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 112 findMedicineById - Enter
+11 Apr 2025 15:26:05,002 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:26:05,002 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:26:05,003 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 135 findEmployeeById - Enter
+11 Apr 2025 15:26:05,003 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:26:05,003 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:26:05,004 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 112 findMedicineById - Enter
+11 Apr 2025 15:26:05,004 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:26:05,005 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:26:05,005 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 135 findEmployeeById - Enter
+11 Apr 2025 15:26:05,005 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:26:05,006 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:26:05,007 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 112 findMedicineById - Enter
+11 Apr 2025 15:26:05,007 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:26:05,007 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:26:05,008 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 135 findEmployeeById - Enter
+11 Apr 2025 15:26:05,008 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:26:05,009 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:26:05,009 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 112 findMedicineById - Enter
+11 Apr 2025 15:26:05,010 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:26:05,010 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:26:05,011 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 135 findEmployeeById - Enter
+11 Apr 2025 15:26:05,011 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:26:05,011 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:26:05,012 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 112 findMedicineById - Enter
+11 Apr 2025 15:26:05,012 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:26:05,012 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:26:05,013 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 135 findEmployeeById - Enter
+11 Apr 2025 15:26:05,013 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:26:05,014 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:26:05,014 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 112 findMedicineById - Enter
+11 Apr 2025 15:26:05,015 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:26:05,015 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:26:05,015 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 135 findEmployeeById - Enter
+11 Apr 2025 15:26:05,016 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:26:05,016 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:26:05,017 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 112 findMedicineById - Enter
+11 Apr 2025 15:26:05,017 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:26:05,017 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:26:05,018 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 135 findEmployeeById - Enter
+11 Apr 2025 15:26:05,018 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:26:05,018 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:26:05,019 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 112 findMedicineById - Enter
+11 Apr 2025 15:26:05,019 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:26:05,019 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:26:05,020 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 135 findEmployeeById - Enter
+11 Apr 2025 15:26:05,020 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:26:05,020 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:26:05,021 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 112 findMedicineById - Enter
+11 Apr 2025 15:26:05,021 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:26:05,021 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:26:05,022 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 135 findEmployeeById - Enter
+11 Apr 2025 15:26:05,022 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:26:05,023 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:26:05,023 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 251 findOrdersByEmployeeId - Exit with([ro.iss2025.medicineorderingsystem.domain.Order@7fe0eb7d, ro.iss2025.medicineorderingsystem.domain.Order@78d1dcd3, ro.iss2025.medicineorderingsystem.domain.Order@1088480f, ro.iss2025.medicineorderingsystem.domain.Order@278b9dff, ro.iss2025.medicineorderingsystem.domain.Order@5fc82170, ro.iss2025.medicineorderingsystem.domain.Order@2909491e, ro.iss2025.medicineorderingsystem.domain.Order@7b13b400, ro.iss2025.medicineorderingsystem.domain.Order@caaf8, ro.iss2025.medicineorderingsystem.domain.Order@1e51d828, ro.iss2025.medicineorderingsystem.domain.Order@7d732345])
+11 Apr 2025 15:26:13,576 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 162 findPendingOrders - Enter
+11 Apr 2025 15:26:13,576 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:26:13,576 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:26:13,577 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 112 findMedicineById - Enter
+11 Apr 2025 15:26:13,577 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:26:13,577 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:26:13,577 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 135 findEmployeeById - Enter
+11 Apr 2025 15:26:13,577 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:26:13,577 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:26:13,577 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 112 findMedicineById - Enter
+11 Apr 2025 15:26:13,578 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:26:13,578 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:26:13,578 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 135 findEmployeeById - Enter
+11 Apr 2025 15:26:13,578 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:26:13,578 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:26:13,578 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 112 findMedicineById - Enter
+11 Apr 2025 15:26:13,578 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:26:13,578 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:26:13,579 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 135 findEmployeeById - Enter
+11 Apr 2025 15:26:13,579 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:26:13,579 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:26:13,579 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 112 findMedicineById - Enter
+11 Apr 2025 15:26:13,579 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:26:13,579 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:26:13,579 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 135 findEmployeeById - Enter
+11 Apr 2025 15:26:13,579 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:26:13,580 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:26:13,580 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 112 findMedicineById - Enter
+11 Apr 2025 15:26:13,580 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:26:13,580 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:26:13,580 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 135 findEmployeeById - Enter
+11 Apr 2025 15:26:13,580 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:26:13,580 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:26:13,580 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 112 findMedicineById - Enter
+11 Apr 2025 15:26:13,580 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:26:13,581 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:26:13,581 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 135 findEmployeeById - Enter
+11 Apr 2025 15:26:13,581 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:26:13,581 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:26:13,581 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 112 findMedicineById - Enter
+11 Apr 2025 15:26:13,581 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:26:13,582 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:26:13,582 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 135 findEmployeeById - Enter
+11 Apr 2025 15:26:13,582 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:26:13,582 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:26:13,582 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 112 findMedicineById - Enter
+11 Apr 2025 15:26:13,582 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:26:13,583 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:26:13,583 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 135 findEmployeeById - Enter
+11 Apr 2025 15:26:13,583 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:26:13,583 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:26:13,583 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 112 findMedicineById - Enter
+11 Apr 2025 15:26:13,584 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:26:13,584 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:26:13,584 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 135 findEmployeeById - Enter
+11 Apr 2025 15:26:13,584 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:26:13,584 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:26:13,584 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 112 findMedicineById - Enter
+11 Apr 2025 15:26:13,585 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:26:13,585 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:26:13,585 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 135 findEmployeeById - Enter
+11 Apr 2025 15:26:13,585 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:26:13,585 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:26:13,586 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 187 findPendingOrders - Exit with([ro.iss2025.medicineorderingsystem.domain.Order@202f4e77, ro.iss2025.medicineorderingsystem.domain.Order@7a2a264f, ro.iss2025.medicineorderingsystem.domain.Order@5fc5c9c9, ro.iss2025.medicineorderingsystem.domain.Order@38e1b6b4, ro.iss2025.medicineorderingsystem.domain.Order@62e71b29, ro.iss2025.medicineorderingsystem.domain.Order@49d45164, ro.iss2025.medicineorderingsystem.domain.Order@382e5216, ro.iss2025.medicineorderingsystem.domain.Order@d4f17b1, ro.iss2025.medicineorderingsystem.domain.Order@572b7b62, ro.iss2025.medicineorderingsystem.domain.Order@3c9f5f92])
+11 Apr 2025 15:26:17,852 TRACE ro.iss2025.medicineorderingsystem.repository.MedicineRepo 72 findAll - Enter
+11 Apr 2025 15:26:17,853 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:26:17,853 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@7b67bc63)
+11 Apr 2025 15:26:17,854 TRACE ro.iss2025.medicineorderingsystem.repository.MedicineRepo 91 findAll - Exit with([Medicine{name=Nurofen Forte, type=AINS, description=Nurofen Forte este utilizat pentru a calma durerile usoare pana la moderate, cum sunt durerea de cap, incluzand migrena, durerea de dinti, durerea menstruala si a reduce febra.}, Medicine{name=Aspacardin, type=supliment mineral, description=Aspacardin este un supliment alimentar pe bază de potasiu și magneziu. Acţionează asupra inimii şi vaselor de sânge, fiind utilizat ca terapie adjuvantă în boala coronariană, tulburări de ritm cadiac şi pentru prevenţia tulburărilor de ritm cardiac care pot să apară după anumite tratamente medicamentoase.}])
+11 Apr 2025 15:26:21,538 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 27 add - Enter saving order ro.iss2025.medicineorderingsystem.domain.Order@45480b5c 
+11 Apr 2025 15:26:21,539 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:26:21,539 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:26:21,550 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 36 add - Saved 1 instances
+11 Apr 2025 15:26:21,551 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 162 findPendingOrders - Enter
+11 Apr 2025 15:26:21,552 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:26:21,552 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:26:21,554 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 112 findMedicineById - Enter
+11 Apr 2025 15:26:21,554 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:26:21,554 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:26:21,555 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 135 findEmployeeById - Enter
+11 Apr 2025 15:26:21,555 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:26:21,556 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:26:21,557 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 112 findMedicineById - Enter
+11 Apr 2025 15:26:21,557 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:26:21,558 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:26:21,558 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 135 findEmployeeById - Enter
+11 Apr 2025 15:26:21,559 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:26:21,559 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:26:21,559 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 112 findMedicineById - Enter
+11 Apr 2025 15:26:21,560 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:26:21,560 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:26:21,561 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 135 findEmployeeById - Enter
+11 Apr 2025 15:26:21,561 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:26:21,562 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:26:21,563 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 112 findMedicineById - Enter
+11 Apr 2025 15:26:21,563 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:26:21,563 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:26:21,564 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 135 findEmployeeById - Enter
+11 Apr 2025 15:26:21,564 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:26:21,565 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:26:21,565 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 112 findMedicineById - Enter
+11 Apr 2025 15:26:21,566 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:26:21,566 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:26:21,567 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 135 findEmployeeById - Enter
+11 Apr 2025 15:26:21,567 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:26:21,567 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:26:21,568 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 112 findMedicineById - Enter
+11 Apr 2025 15:26:21,568 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:26:21,569 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:26:21,569 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 135 findEmployeeById - Enter
+11 Apr 2025 15:26:21,570 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:26:21,570 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:26:21,571 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 112 findMedicineById - Enter
+11 Apr 2025 15:26:21,571 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:26:21,571 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:26:21,572 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 135 findEmployeeById - Enter
+11 Apr 2025 15:26:21,572 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:26:21,573 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:26:21,573 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 112 findMedicineById - Enter
+11 Apr 2025 15:26:21,573 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:26:21,574 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:26:21,574 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 135 findEmployeeById - Enter
+11 Apr 2025 15:26:21,575 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:26:21,575 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:26:21,576 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 112 findMedicineById - Enter
+11 Apr 2025 15:26:21,576 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:26:21,576 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:26:21,577 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 135 findEmployeeById - Enter
+11 Apr 2025 15:26:21,578 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:26:21,578 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:26:21,579 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 112 findMedicineById - Enter
+11 Apr 2025 15:26:21,580 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:26:21,580 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:26:21,581 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 135 findEmployeeById - Enter
+11 Apr 2025 15:26:21,582 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:26:21,582 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:26:21,583 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 112 findMedicineById - Enter
+11 Apr 2025 15:26:21,584 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:26:21,584 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:26:21,584 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 135 findEmployeeById - Enter
+11 Apr 2025 15:26:21,585 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:26:21,585 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:26:21,586 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 187 findPendingOrders - Exit with([ro.iss2025.medicineorderingsystem.domain.Order@26f84c1f, ro.iss2025.medicineorderingsystem.domain.Order@c71ab02, ro.iss2025.medicineorderingsystem.domain.Order@9e6433b, ro.iss2025.medicineorderingsystem.domain.Order@42b9ac91, ro.iss2025.medicineorderingsystem.domain.Order@26c5886d, ro.iss2025.medicineorderingsystem.domain.Order@27ed0e0c, ro.iss2025.medicineorderingsystem.domain.Order@1c297e51, ro.iss2025.medicineorderingsystem.domain.Order@137b9461, ro.iss2025.medicineorderingsystem.domain.Order@1977f083, ro.iss2025.medicineorderingsystem.domain.Order@562510cf, ro.iss2025.medicineorderingsystem.domain.Order@12937ac])
+11 Apr 2025 15:26:21,588 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 225 findOrdersByEmployeeId - Enter
+11 Apr 2025 15:26:21,588 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:26:21,588 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:26:21,589 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 112 findMedicineById - Enter
+11 Apr 2025 15:26:21,590 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:26:21,590 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:26:21,591 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 135 findEmployeeById - Enter
+11 Apr 2025 15:26:21,591 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:26:21,591 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:26:21,592 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 112 findMedicineById - Enter
+11 Apr 2025 15:26:21,592 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:26:21,593 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:26:21,593 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 135 findEmployeeById - Enter
+11 Apr 2025 15:26:21,594 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:26:21,594 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:26:21,595 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 112 findMedicineById - Enter
+11 Apr 2025 15:26:21,595 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:26:21,595 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:26:21,596 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 135 findEmployeeById - Enter
+11 Apr 2025 15:26:21,596 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:26:21,597 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:26:21,597 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 112 findMedicineById - Enter
+11 Apr 2025 15:26:21,598 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:26:21,598 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:26:21,599 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 135 findEmployeeById - Enter
+11 Apr 2025 15:26:21,599 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:26:21,599 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:26:21,600 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 112 findMedicineById - Enter
+11 Apr 2025 15:26:21,600 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:26:21,600 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:26:21,601 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 135 findEmployeeById - Enter
+11 Apr 2025 15:26:21,602 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:26:21,602 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:26:21,603 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 112 findMedicineById - Enter
+11 Apr 2025 15:26:21,603 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:26:21,604 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:26:21,604 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 135 findEmployeeById - Enter
+11 Apr 2025 15:26:21,605 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:26:21,605 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:26:21,606 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 112 findMedicineById - Enter
+11 Apr 2025 15:26:21,606 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:26:21,607 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:26:21,609 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 135 findEmployeeById - Enter
+11 Apr 2025 15:26:21,609 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:26:21,610 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:26:21,611 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 112 findMedicineById - Enter
+11 Apr 2025 15:26:21,611 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:26:21,612 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:26:21,612 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 135 findEmployeeById - Enter
+11 Apr 2025 15:26:21,613 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:26:21,613 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:26:21,614 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 112 findMedicineById - Enter
+11 Apr 2025 15:26:21,614 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:26:21,614 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:26:21,615 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 135 findEmployeeById - Enter
+11 Apr 2025 15:26:21,615 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:26:21,615 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:26:21,616 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 112 findMedicineById - Enter
+11 Apr 2025 15:26:21,616 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:26:21,616 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:26:21,617 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 135 findEmployeeById - Enter
+11 Apr 2025 15:26:21,617 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:26:21,617 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:26:21,617 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 112 findMedicineById - Enter
+11 Apr 2025 15:26:21,617 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:26:21,617 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:26:21,618 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 135 findEmployeeById - Enter
+11 Apr 2025 15:26:21,618 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+11 Apr 2025 15:26:21,618 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46074563)
+11 Apr 2025 15:26:21,619 TRACE ro.iss2025.medicineorderingsystem.repository.OrderRepo 251 findOrdersByEmployeeId - Exit with([ro.iss2025.medicineorderingsystem.domain.Order@68eb71d8, ro.iss2025.medicineorderingsystem.domain.Order@1636b762, ro.iss2025.medicineorderingsystem.domain.Order@5e6a765f, ro.iss2025.medicineorderingsystem.domain.Order@63f28b25, ro.iss2025.medicineorderingsystem.domain.Order@50a45332, ro.iss2025.medicineorderingsystem.domain.Order@738a73e3, ro.iss2025.medicineorderingsystem.domain.Order@7edf3b43, ro.iss2025.medicineorderingsystem.domain.Order@9833c1e, ro.iss2025.medicineorderingsystem.domain.Order@7bccd3df, ro.iss2025.medicineorderingsystem.domain.Order@5b79b22e, ro.iss2025.medicineorderingsystem.domain.Order@5cfb9f21])
+29 May 2025 10:36:52,056 INFO  ro.iss2025.medicineorderingsystem.repository.HospitalEmployeeRepo 22 <init> - Initializing HospitalEmployeeRepo with properties: {URL=jdbc:sqlite:D://Faculta//ISS//MedicineOrderingSystem//src//main//resources//ro//iss2025//medicineorderingsystem//SQLiteDb.db} 
+29 May 2025 10:36:52,060 INFO  ro.iss2025.medicineorderingsystem.repository.MedicineRepo 19 <init> - Initializing MedicineRepo with properties: {URL=jdbc:sqlite:D://Faculta//ISS//MedicineOrderingSystem//src//main//resources//ro//iss2025//medicineorderingsystem//SQLiteDb.db} 
+29 May 2025 10:36:52,062 INFO  ro.iss2025.medicineorderingsystem.repository.OrderRepo 21 <init> - Initializing OrderRepo with properties: {URL=jdbc:sqlite:D://Faculta//ISS//MedicineOrderingSystem//src//main//resources//ro//iss2025//medicineorderingsystem//SQLiteDb.db} 
+29 May 2025 10:36:56,875 TRACE ro.iss2025.medicineorderingsystem.repository.HospitalEmployeeRepo 108 findByCredentials - Enter
+29 May 2025 10:36:56,876 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+29 May 2025 10:36:56,877 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 25 getNewConnection - Enter
+29 May 2025 10:36:56,878 INFO  ro.iss2025.medicineorderingsystem.repository.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:D://Faculta//ISS//MedicineOrderingSystem//src//main//resources//ro//iss2025//medicineorderingsystem//SQLiteDb.db
+29 May 2025 10:36:56,880 INFO  ro.iss2025.medicineorderingsystem.repository.JdbcUtils 31 getNewConnection - user: null
+29 May 2025 10:36:56,881 INFO  ro.iss2025.medicineorderingsystem.repository.JdbcUtils 32 getNewConnection - pass: null
+29 May 2025 10:36:57,142 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@c1be398)
+29 May 2025 10:36:57,151 TRACE ro.iss2025.medicineorderingsystem.repository.HospitalEmployeeRepo 121 findByCredentials - Exit with(ro.iss2025.medicineorderingsystem.domain.HospitalEmployee@200ce238)
+29 May 2025 10:36:58,721 TRACE ro.iss2025.medicineorderingsystem.repository.HospitalEmployeeRepo 75 findAll - Enter
+29 May 2025 10:36:58,721 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+29 May 2025 10:36:58,722 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@c1be398)
+29 May 2025 10:36:58,723 TRACE ro.iss2025.medicineorderingsystem.repository.HospitalEmployeeRepo 97 findAll - Exit with([ro.iss2025.medicineorderingsystem.domain.HospitalEmployee@381d1a87, ro.iss2025.medicineorderingsystem.domain.HospitalEmployee@5699ab9d, ro.iss2025.medicineorderingsystem.domain.HospitalEmployee@76130f9])
+29 May 2025 10:36:59,792 TRACE ro.iss2025.medicineorderingsystem.repository.MedicineRepo 72 findAll - Enter
+29 May 2025 10:36:59,793 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+29 May 2025 10:36:59,794 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 25 getNewConnection - Enter
+29 May 2025 10:36:59,795 INFO  ro.iss2025.medicineorderingsystem.repository.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:D://Faculta//ISS//MedicineOrderingSystem//src//main//resources//ro//iss2025//medicineorderingsystem//SQLiteDb.db
+29 May 2025 10:36:59,796 INFO  ro.iss2025.medicineorderingsystem.repository.JdbcUtils 31 getNewConnection - user: null
+29 May 2025 10:36:59,796 INFO  ro.iss2025.medicineorderingsystem.repository.JdbcUtils 32 getNewConnection - pass: null
+29 May 2025 10:36:59,799 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@28b76edf)
+29 May 2025 10:36:59,804 TRACE ro.iss2025.medicineorderingsystem.repository.MedicineRepo 91 findAll - Exit with([Medicine{name=Nurofen Forte, type=AINS, description=Nurofen Forte este utilizat pentru a calma durerile usoare pana la moderate, cum sunt durerea de cap, incluzand migrena, durerea de dinti, durerea menstruala si a reduce febra.}, Medicine{name=Aspacardin, type=supliment mineral, description=Aspacardin este un supliment alimentar pe bază de potasiu și magneziu. Acţionează asupra inimii şi vaselor de sânge, fiind utilizat ca terapie adjuvantă în boala coronariană, tulburări de ritm cadiac şi pentru prevenţia tulburărilor de ritm cardiac care pot să apară după anumite tratamente medicamentoase.}])
+29 May 2025 10:37:00,882 TRACE ro.iss2025.medicineorderingsystem.repository.HospitalEmployeeRepo 75 findAll - Enter
+29 May 2025 10:37:00,883 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 47 getConnection - Enter
+29 May 2025 10:37:00,883 TRACE ro.iss2025.medicineorderingsystem.repository.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@c1be398)
+29 May 2025 10:37:00,884 TRACE ro.iss2025.medicineorderingsystem.repository.HospitalEmployeeRepo 97 findAll - Exit with([ro.iss2025.medicineorderingsystem.domain.HospitalEmployee@2173af36, ro.iss2025.medicineorderingsystem.domain.HospitalEmployee@6bd093f7, ro.iss2025.medicineorderingsystem.domain.HospitalEmployee@46fd54c2])
+29 May 2025 11:18:04,982 INFO  ro.iss2025.medicineorderingsystem.repository.MedicineRepo 19 <init> - Initializing MedicineRepo with properties: {URL=jdbc:sqlite:D://Faculta//ISS//MedicineOrderingSystem//src//main//resources//ro//iss2025//medicineorderingsystem//SQLiteDb.db} 
+29 May 2025 11:18:04,986 INFO  ro.iss2025.medicineorderingsystem.repository.OrderRepo 21 <init> - Initializing OrderRepo with properties: {URL=jdbc:sqlite:D://Faculta//ISS//MedicineOrderingSystem//src//main//resources//ro//iss2025//medicineorderingsystem//SQLiteDb.db} 
+29 May 2025 11:19:12,610 INFO  ro.iss2025.medicineorderingsystem.repository.MedicineRepo 19 <init> - Initializing MedicineRepo with properties: {URL=jdbc:sqlite:D://Faculta//ISS//MedicineOrderingSystem//src//main//resources//ro//iss2025//medicineorderingsystem//SQLiteDb.db} 
+29 May 2025 11:19:12,618 INFO  ro.iss2025.medicineorderingsystem.repository.OrderRepo 21 <init> - Initializing OrderRepo with properties: {URL=jdbc:sqlite:D://Faculta//ISS//MedicineOrderingSystem//src//main//resources//ro//iss2025//medicineorderingsystem//SQLiteDb.db} 
+29 May 2025 11:20:26,688 INFO  ro.iss2025.medicineorderingsystem.repository.MedicineRepo 19 <init> - Initializing MedicineRepo with properties: {URL=jdbc:sqlite:D://Faculta//ISS//MedicineOrderingSystem//src//main//resources//ro//iss2025//medicineorderingsystem//SQLiteDb.db} 
+29 May 2025 11:20:26,692 INFO  ro.iss2025.medicineorderingsystem.repository.OrderRepo 21 <init> - Initializing OrderRepo with properties: {URL=jdbc:sqlite:D://Faculta//ISS//MedicineOrderingSystem//src//main//resources//ro//iss2025//medicineorderingsystem//SQLiteDb.db} 
+29 May 2025 11:21:26,773 INFO  ro.iss2025.medicineorderingsystem.repository.MedicineRepo 19 <init> - Initializing MedicineRepo with properties: {URL=jdbc:sqlite:D://Faculta//ISS//MedicineOrderingSystem//src//main//resources//ro//iss2025//medicineorderingsystem//SQLiteDb.db} 
+29 May 2025 11:21:26,778 INFO  ro.iss2025.medicineorderingsystem.repository.OrderRepo 21 <init> - Initializing OrderRepo with properties: {URL=jdbc:sqlite:D://Faculta//ISS//MedicineOrderingSystem//src//main//resources//ro//iss2025//medicineorderingsystem//SQLiteDb.db} 
+29 May 2025 11:23:16,574 INFO  ro.iss2025.medicineorderingsystem.repository.MedicineRepo 19 <init> - Initializing MedicineRepo with properties: {URL=jdbc:sqlite:D://Faculta//ISS//MedicineOrderingSystem//src//main//resources//ro//iss2025//medicineorderingsystem//SQLiteDb.db} 
+29 May 2025 11:23:16,578 INFO  ro.iss2025.medicineorderingsystem.repository.OrderRepo 21 <init> - Initializing OrderRepo with properties: {URL=jdbc:sqlite:D://Faculta//ISS//MedicineOrderingSystem//src//main//resources//ro//iss2025//medicineorderingsystem//SQLiteDb.db} 
+29 May 2025 11:25:31,653 INFO  ro.iss2025.medicineorderingsystem.repository.MedicineRepo 19 <init> - Initializing MedicineRepo with properties: {URL=jdbc:sqlite:D://Faculta//ISS//MedicineOrderingSystem//src//main//resources//ro//iss2025//medicineorderingsystem//SQLiteDb.db} 
+29 May 2025 11:25:31,659 INFO  ro.iss2025.medicineorderingsystem.repository.OrderRepo 21 <init> - Initializing OrderRepo with properties: {URL=jdbc:sqlite:D://Faculta//ISS//MedicineOrderingSystem//src//main//resources//ro//iss2025//medicineorderingsystem//SQLiteDb.db} 
+29 May 2025 11:26:21,299 INFO  ro.iss2025.medicineorderingsystem.repository.MedicineRepo 19 <init> - Initializing MedicineRepo with properties: {URL=jdbc:sqlite:D://Faculta//ISS//MedicineOrderingSystem//src//main//resources//ro//iss2025//medicineorderingsystem//SQLiteDb.db} 
+29 May 2025 11:26:21,304 INFO  ro.iss2025.medicineorderingsystem.repository.OrderRepo 21 <init> - Initializing OrderRepo with properties: {URL=jdbc:sqlite:D://Faculta//ISS//MedicineOrderingSystem//src//main//resources//ro//iss2025//medicineorderingsystem//SQLiteDb.db} 
+29 May 2025 11:28:57,718 INFO  ro.iss2025.medicineorderingsystem.repository.MedicineRepo 19 <init> - Initializing MedicineRepo with properties: {URL=jdbc:sqlite:D://Faculta//ISS//MedicineOrderingSystem//src//main//resources//ro//iss2025//medicineorderingsystem//SQLiteDb.db} 
+29 May 2025 11:28:57,727 INFO  ro.iss2025.medicineorderingsystem.repository.OrderRepo 21 <init> - Initializing OrderRepo with properties: {URL=jdbc:sqlite:D://Faculta//ISS//MedicineOrderingSystem//src//main//resources//ro//iss2025//medicineorderingsystem//SQLiteDb.db} 
+29 May 2025 11:31:25,582 INFO  ro.iss2025.medicineorderingsystem.repository.MedicineRepo 19 <init> - Initializing MedicineRepo with properties: {URL=jdbc:sqlite:D://Faculta//ISS//MedicineOrderingSystem//src//main//resources//ro//iss2025//medicineorderingsystem//SQLiteDb.db} 
+29 May 2025 11:31:25,591 INFO  ro.iss2025.medicineorderingsystem.repository.OrderRepo 21 <init> - Initializing OrderRepo with properties: {URL=jdbc:sqlite:D://Faculta//ISS//MedicineOrderingSystem//src//main//resources//ro//iss2025//medicineorderingsystem//SQLiteDb.db} 
+29 May 2025 11:31:33,417 DEBUG org.jboss.logging.LoggerProviders 152 logProvider - Logging Provider: org.jboss.logging.Log4j2LoggerProvider
+29 May 2025 11:31:33,428 DEBUG org.hibernate.integrator.internal.IntegratorServiceImpl 51 addIntegrator - Adding Integrator [org.hibernate.boot.beanvalidation.BeanValidationIntegrator].
+29 May 2025 11:31:33,434 DEBUG org.hibernate.integrator.internal.IntegratorServiceImpl 51 addIntegrator - Adding Integrator [org.hibernate.cache.internal.CollectionCacheInvalidator].
+29 May 2025 11:31:33,454 TRACE org.hibernate.boot.registry.selector.internal.StrategySelectorImpl 83 registerStrategyImplementor - Registering named strategy selector [org.hibernate.resource.transaction.spi.TransactionCoordinatorBuilder] : [jdbc] -> [org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorBuilderImpl]
+29 May 2025 11:31:33,455 TRACE org.hibernate.boot.registry.selector.internal.StrategySelectorImpl 83 registerStrategyImplementor - Registering named strategy selector [org.hibernate.resource.transaction.spi.TransactionCoordinatorBuilder] : [jta] -> [org.hibernate.resource.transaction.backend.jta.internal.JtaTransactionCoordinatorBuilderImpl]
+29 May 2025 11:31:33,456 TRACE org.hibernate.boot.registry.selector.internal.StrategySelectorImpl 83 registerStrategyImplementor - Registering named strategy selector [org.hibernate.resource.transaction.spi.TransactionCoordinatorBuilder] : [org.hibernate.transaction.JDBCTransactionFactory] -> [org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorBuilderImpl]
+29 May 2025 11:31:33,456 TRACE org.hibernate.boot.registry.selector.internal.StrategySelectorImpl 83 registerStrategyImplementor - Registering named strategy selector [org.hibernate.resource.transaction.spi.TransactionCoordinatorBuilder] : [org.hibernate.transaction.JTATransactionFactory] -> [org.hibernate.resource.transaction.backend.jta.internal.JtaTransactionCoordinatorBuilderImpl]
+29 May 2025 11:31:33,457 TRACE org.hibernate.boot.registry.selector.internal.StrategySelectorImpl 83 registerStrategyImplementor - Registering named strategy selector [org.hibernate.resource.transaction.spi.TransactionCoordinatorBuilder] : [org.hibernate.transaction.CMTTransactionFactory] -> [org.hibernate.resource.transaction.backend.jta.internal.JtaTransactionCoordinatorBuilderImpl]
+29 May 2025 11:31:33,458 TRACE org.hibernate.boot.registry.selector.internal.StrategySelectorImpl 83 registerStrategyImplementor - Registering named strategy selector [org.hibernate.query.sqm.mutation.spi.SqmMultiTableInsertStrategy] : [cte] -> [org.hibernate.query.sqm.mutation.internal.cte.CteInsertStrategy]
+29 May 2025 11:31:33,460 TRACE org.hibernate.boot.registry.selector.internal.StrategySelectorImpl 83 registerStrategyImplementor - Registering named strategy selector [org.hibernate.query.sqm.mutation.spi.SqmMultiTableInsertStrategy] : [global_temporary] -> [org.hibernate.query.sqm.mutation.internal.temptable.GlobalTemporaryTableInsertStrategy]
+29 May 2025 11:31:33,461 TRACE org.hibernate.boot.registry.selector.internal.StrategySelectorImpl 83 registerStrategyImplementor - Registering named strategy selector [org.hibernate.query.sqm.mutation.spi.SqmMultiTableInsertStrategy] : [local_temporary] -> [org.hibernate.query.sqm.mutation.internal.temptable.LocalTemporaryTableInsertStrategy]
+29 May 2025 11:31:33,463 TRACE org.hibernate.boot.registry.selector.internal.StrategySelectorImpl 83 registerStrategyImplementor - Registering named strategy selector [org.hibernate.query.sqm.mutation.spi.SqmMultiTableInsertStrategy] : [persistent] -> [org.hibernate.query.sqm.mutation.internal.temptable.PersistentTableInsertStrategy]
+29 May 2025 11:31:33,465 TRACE org.hibernate.boot.registry.selector.internal.StrategySelectorImpl 83 registerStrategyImplementor - Registering named strategy selector [org.hibernate.query.sqm.mutation.spi.SqmMultiTableMutationStrategy] : [cte] -> [org.hibernate.query.sqm.mutation.internal.cte.CteMutationStrategy]
+29 May 2025 11:31:33,466 TRACE org.hibernate.boot.registry.selector.internal.StrategySelectorImpl 83 registerStrategyImplementor - Registering named strategy selector [org.hibernate.query.sqm.mutation.spi.SqmMultiTableMutationStrategy] : [global_temporary] -> [org.hibernate.query.sqm.mutation.internal.temptable.GlobalTemporaryTableMutationStrategy]
+29 May 2025 11:31:33,466 TRACE org.hibernate.boot.registry.selector.internal.StrategySelectorImpl 83 registerStrategyImplementor - Registering named strategy selector [org.hibernate.query.sqm.mutation.spi.SqmMultiTableMutationStrategy] : [local_temporary] -> [org.hibernate.query.sqm.mutation.internal.temptable.LocalTemporaryTableMutationStrategy]
+29 May 2025 11:31:33,467 TRACE org.hibernate.boot.registry.selector.internal.StrategySelectorImpl 83 registerStrategyImplementor - Registering named strategy selector [org.hibernate.query.sqm.mutation.spi.SqmMultiTableMutationStrategy] : [persistent] -> [org.hibernate.query.sqm.mutation.internal.temptable.PersistentTableMutationStrategy]
+29 May 2025 11:31:33,468 TRACE org.hibernate.boot.registry.selector.internal.StrategySelectorImpl 83 registerStrategyImplementor - Registering named strategy selector [org.hibernate.boot.model.naming.ImplicitNamingStrategy] : [default] -> [org.hibernate.boot.model.naming.ImplicitNamingStrategyJpaCompliantImpl]
+29 May 2025 11:31:33,469 TRACE org.hibernate.boot.registry.selector.internal.StrategySelectorImpl 83 registerStrategyImplementor - Registering named strategy selector [org.hibernate.boot.model.naming.ImplicitNamingStrategy] : [jpa] -> [org.hibernate.boot.model.naming.ImplicitNamingStrategyJpaCompliantImpl]
+29 May 2025 11:31:33,469 TRACE org.hibernate.boot.registry.selector.internal.StrategySelectorImpl 83 registerStrategyImplementor - Registering named strategy selector [org.hibernate.boot.model.naming.ImplicitNamingStrategy] : [legacy-jpa] -> [org.hibernate.boot.model.naming.ImplicitNamingStrategyLegacyJpaImpl]
+29 May 2025 11:31:33,470 TRACE org.hibernate.boot.registry.selector.internal.StrategySelectorImpl 83 registerStrategyImplementor - Registering named strategy selector [org.hibernate.boot.model.naming.ImplicitNamingStrategy] : [legacy-hbm] -> [org.hibernate.boot.model.naming.ImplicitNamingStrategyLegacyHbmImpl]
+29 May 2025 11:31:33,471 TRACE org.hibernate.boot.registry.selector.internal.StrategySelectorImpl 83 registerStrategyImplementor - Registering named strategy selector [org.hibernate.boot.model.naming.ImplicitNamingStrategy] : [component-path] -> [org.hibernate.boot.model.naming.ImplicitNamingStrategyComponentPathImpl]
+29 May 2025 11:31:33,472 TRACE org.hibernate.boot.registry.selector.internal.StrategySelectorImpl 83 registerStrategyImplementor - Registering named strategy selector [org.hibernate.id.enhanced.ImplicitDatabaseObjectNamingStrategy] : [standard] -> [org.hibernate.id.enhanced.StandardNamingStrategy]
+29 May 2025 11:31:33,473 TRACE org.hibernate.boot.registry.selector.internal.StrategySelectorImpl 83 registerStrategyImplementor - Registering named strategy selector [org.hibernate.id.enhanced.ImplicitDatabaseObjectNamingStrategy] : [single] -> [org.hibernate.id.enhanced.SingleNamingStrategy]
+29 May 2025 11:31:33,474 TRACE org.hibernate.boot.registry.selector.internal.StrategySelectorImpl 83 registerStrategyImplementor - Registering named strategy selector [org.hibernate.id.enhanced.ImplicitDatabaseObjectNamingStrategy] : [legacy] -> [org.hibernate.id.enhanced.LegacyNamingStrategy]
+29 May 2025 11:31:33,475 TRACE org.hibernate.boot.registry.selector.internal.StrategySelectorImpl 83 registerStrategyImplementor - Registering named strategy selector [org.hibernate.boot.model.relational.ColumnOrderingStrategy] : [default] -> [org.hibernate.boot.model.relational.ColumnOrderingStrategyStandard]
+29 May 2025 11:31:33,476 TRACE org.hibernate.boot.registry.selector.internal.StrategySelectorImpl 83 registerStrategyImplementor - Registering named strategy selector [org.hibernate.boot.model.relational.ColumnOrderingStrategy] : [legacy] -> [org.hibernate.boot.model.relational.ColumnOrderingStrategyLegacy]
+29 May 2025 11:31:33,477 TRACE org.hibernate.boot.registry.selector.internal.StrategySelectorImpl 83 registerStrategyImplementor - Registering named strategy selector [org.hibernate.cache.spi.CacheKeysFactory] : [default] -> [org.hibernate.cache.internal.DefaultCacheKeysFactory]
+29 May 2025 11:31:33,479 TRACE org.hibernate.boot.registry.selector.internal.StrategySelectorImpl 83 registerStrategyImplementor - Registering named strategy selector [org.hibernate.cache.spi.CacheKeysFactory] : [simple] -> [org.hibernate.cache.internal.SimpleCacheKeysFactory]
+29 May 2025 11:31:33,480 TRACE org.hibernate.boot.registry.selector.internal.StrategySelectorImpl 83 registerStrategyImplementor - Registering named strategy selector [org.hibernate.type.format.FormatMapper] : [jackson] -> [org.hibernate.type.format.jackson.JacksonJsonFormatMapper]
+29 May 2025 11:31:33,481 TRACE org.hibernate.boot.registry.selector.internal.StrategySelectorImpl 83 registerStrategyImplementor - Registering named strategy selector [org.hibernate.type.format.FormatMapper] : [jsonb] -> [org.hibernate.type.format.jakartajson.JsonBJsonFormatMapper]
+29 May 2025 11:31:33,482 TRACE org.hibernate.boot.registry.selector.internal.StrategySelectorImpl 83 registerStrategyImplementor - Registering named strategy selector [org.hibernate.type.format.FormatMapper] : [jackson-xml] -> [org.hibernate.type.format.jackson.JacksonXmlFormatMapper]
+29 May 2025 11:31:33,483 TRACE org.hibernate.boot.registry.selector.internal.StrategySelectorImpl 83 registerStrategyImplementor - Registering named strategy selector [org.hibernate.type.format.FormatMapper] : [jaxb] -> [org.hibernate.type.format.jaxb.JaxbXmlFormatMapper]
+29 May 2025 11:38:51,588 INFO  ro.iss2025.medicineorderingsystem.repository.MedicineRepo 19 <init> - Initializing MedicineRepo with properties: {URL=jdbc:sqlite:D://Faculta//ISS//MedicineOrderingSystem//src//main//resources//ro//iss2025//medicineorderingsystem//SQLiteDb.db} 
+29 May 2025 11:38:51,593 INFO  ro.iss2025.medicineorderingsystem.repository.OrderRepo 21 <init> - Initializing OrderRepo with properties: {URL=jdbc:sqlite:D://Faculta//ISS//MedicineOrderingSystem//src//main//resources//ro//iss2025//medicineorderingsystem//SQLiteDb.db} 
+29 May 2025 11:39:02,208 DEBUG org.jboss.logging.LoggerProviders 152 logProvider - Logging Provider: org.jboss.logging.Log4j2LoggerProvider
+29 May 2025 11:39:02,220 DEBUG org.hibernate.integrator.internal.IntegratorServiceImpl 51 addIntegrator - Adding Integrator [org.hibernate.boot.beanvalidation.BeanValidationIntegrator].
+29 May 2025 11:39:02,227 DEBUG org.hibernate.integrator.internal.IntegratorServiceImpl 51 addIntegrator - Adding Integrator [org.hibernate.cache.internal.CollectionCacheInvalidator].
+29 May 2025 11:39:02,245 TRACE org.hibernate.boot.registry.selector.internal.StrategySelectorImpl 83 registerStrategyImplementor - Registering named strategy selector [org.hibernate.resource.transaction.spi.TransactionCoordinatorBuilder] : [jdbc] -> [org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorBuilderImpl]
+29 May 2025 11:39:02,245 TRACE org.hibernate.boot.registry.selector.internal.StrategySelectorImpl 83 registerStrategyImplementor - Registering named strategy selector [org.hibernate.resource.transaction.spi.TransactionCoordinatorBuilder] : [jta] -> [org.hibernate.resource.transaction.backend.jta.internal.JtaTransactionCoordinatorBuilderImpl]
+29 May 2025 11:39:02,246 TRACE org.hibernate.boot.registry.selector.internal.StrategySelectorImpl 83 registerStrategyImplementor - Registering named strategy selector [org.hibernate.resource.transaction.spi.TransactionCoordinatorBuilder] : [org.hibernate.transaction.JDBCTransactionFactory] -> [org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorBuilderImpl]
+29 May 2025 11:39:02,246 TRACE org.hibernate.boot.registry.selector.internal.StrategySelectorImpl 83 registerStrategyImplementor - Registering named strategy selector [org.hibernate.resource.transaction.spi.TransactionCoordinatorBuilder] : [org.hibernate.transaction.JTATransactionFactory] -> [org.hibernate.resource.transaction.backend.jta.internal.JtaTransactionCoordinatorBuilderImpl]
+29 May 2025 11:39:02,247 TRACE org.hibernate.boot.registry.selector.internal.StrategySelectorImpl 83 registerStrategyImplementor - Registering named strategy selector [org.hibernate.resource.transaction.spi.TransactionCoordinatorBuilder] : [org.hibernate.transaction.CMTTransactionFactory] -> [org.hibernate.resource.transaction.backend.jta.internal.JtaTransactionCoordinatorBuilderImpl]
+29 May 2025 11:39:02,248 TRACE org.hibernate.boot.registry.selector.internal.StrategySelectorImpl 83 registerStrategyImplementor - Registering named strategy selector [org.hibernate.query.sqm.mutation.spi.SqmMultiTableInsertStrategy] : [cte] -> [org.hibernate.query.sqm.mutation.internal.cte.CteInsertStrategy]
+29 May 2025 11:39:02,250 TRACE org.hibernate.boot.registry.selector.internal.StrategySelectorImpl 83 registerStrategyImplementor - Registering named strategy selector [org.hibernate.query.sqm.mutation.spi.SqmMultiTableInsertStrategy] : [global_temporary] -> [org.hibernate.query.sqm.mutation.internal.temptable.GlobalTemporaryTableInsertStrategy]
+29 May 2025 11:39:02,251 TRACE org.hibernate.boot.registry.selector.internal.StrategySelectorImpl 83 registerStrategyImplementor - Registering named strategy selector [org.hibernate.query.sqm.mutation.spi.SqmMultiTableInsertStrategy] : [local_temporary] -> [org.hibernate.query.sqm.mutation.internal.temptable.LocalTemporaryTableInsertStrategy]
+29 May 2025 11:39:02,252 TRACE org.hibernate.boot.registry.selector.internal.StrategySelectorImpl 83 registerStrategyImplementor - Registering named strategy selector [org.hibernate.query.sqm.mutation.spi.SqmMultiTableInsertStrategy] : [persistent] -> [org.hibernate.query.sqm.mutation.internal.temptable.PersistentTableInsertStrategy]
+29 May 2025 11:39:02,253 TRACE org.hibernate.boot.registry.selector.internal.StrategySelectorImpl 83 registerStrategyImplementor - Registering named strategy selector [org.hibernate.query.sqm.mutation.spi.SqmMultiTableMutationStrategy] : [cte] -> [org.hibernate.query.sqm.mutation.internal.cte.CteMutationStrategy]
+29 May 2025 11:39:02,253 TRACE org.hibernate.boot.registry.selector.internal.StrategySelectorImpl 83 registerStrategyImplementor - Registering named strategy selector [org.hibernate.query.sqm.mutation.spi.SqmMultiTableMutationStrategy] : [global_temporary] -> [org.hibernate.query.sqm.mutation.internal.temptable.GlobalTemporaryTableMutationStrategy]
+29 May 2025 11:39:02,254 TRACE org.hibernate.boot.registry.selector.internal.StrategySelectorImpl 83 registerStrategyImplementor - Registering named strategy selector [org.hibernate.query.sqm.mutation.spi.SqmMultiTableMutationStrategy] : [local_temporary] -> [org.hibernate.query.sqm.mutation.internal.temptable.LocalTemporaryTableMutationStrategy]
+29 May 2025 11:39:02,255 TRACE org.hibernate.boot.registry.selector.internal.StrategySelectorImpl 83 registerStrategyImplementor - Registering named strategy selector [org.hibernate.query.sqm.mutation.spi.SqmMultiTableMutationStrategy] : [persistent] -> [org.hibernate.query.sqm.mutation.internal.temptable.PersistentTableMutationStrategy]
+29 May 2025 11:39:02,256 TRACE org.hibernate.boot.registry.selector.internal.StrategySelectorImpl 83 registerStrategyImplementor - Registering named strategy selector [org.hibernate.boot.model.naming.ImplicitNamingStrategy] : [default] -> [org.hibernate.boot.model.naming.ImplicitNamingStrategyJpaCompliantImpl]
+29 May 2025 11:39:02,257 TRACE org.hibernate.boot.registry.selector.internal.StrategySelectorImpl 83 registerStrategyImplementor - Registering named strategy selector [org.hibernate.boot.model.naming.ImplicitNamingStrategy] : [jpa] -> [org.hibernate.boot.model.naming.ImplicitNamingStrategyJpaCompliantImpl]
+29 May 2025 11:39:02,257 TRACE org.hibernate.boot.registry.selector.internal.StrategySelectorImpl 83 registerStrategyImplementor - Registering named strategy selector [org.hibernate.boot.model.naming.ImplicitNamingStrategy] : [legacy-jpa] -> [org.hibernate.boot.model.naming.ImplicitNamingStrategyLegacyJpaImpl]
+29 May 2025 11:39:02,258 TRACE org.hibernate.boot.registry.selector.internal.StrategySelectorImpl 83 registerStrategyImplementor - Registering named strategy selector [org.hibernate.boot.model.naming.ImplicitNamingStrategy] : [legacy-hbm] -> [org.hibernate.boot.model.naming.ImplicitNamingStrategyLegacyHbmImpl]
+29 May 2025 11:39:02,258 TRACE org.hibernate.boot.registry.selector.internal.StrategySelectorImpl 83 registerStrategyImplementor - Registering named strategy selector [org.hibernate.boot.model.naming.ImplicitNamingStrategy] : [component-path] -> [org.hibernate.boot.model.naming.ImplicitNamingStrategyComponentPathImpl]
+29 May 2025 11:39:02,259 TRACE org.hibernate.boot.registry.selector.internal.StrategySelectorImpl 83 registerStrategyImplementor - Registering named strategy selector [org.hibernate.id.enhanced.ImplicitDatabaseObjectNamingStrategy] : [standard] -> [org.hibernate.id.enhanced.StandardNamingStrategy]
+29 May 2025 11:39:02,260 TRACE org.hibernate.boot.registry.selector.internal.StrategySelectorImpl 83 registerStrategyImplementor - Registering named strategy selector [org.hibernate.id.enhanced.ImplicitDatabaseObjectNamingStrategy] : [single] -> [org.hibernate.id.enhanced.SingleNamingStrategy]
+29 May 2025 11:39:02,261 TRACE org.hibernate.boot.registry.selector.internal.StrategySelectorImpl 83 registerStrategyImplementor - Registering named strategy selector [org.hibernate.id.enhanced.ImplicitDatabaseObjectNamingStrategy] : [legacy] -> [org.hibernate.id.enhanced.LegacyNamingStrategy]
+29 May 2025 11:39:02,262 TRACE org.hibernate.boot.registry.selector.internal.StrategySelectorImpl 83 registerStrategyImplementor - Registering named strategy selector [org.hibernate.boot.model.relational.ColumnOrderingStrategy] : [default] -> [org.hibernate.boot.model.relational.ColumnOrderingStrategyStandard]
+29 May 2025 11:39:02,263 TRACE org.hibernate.boot.registry.selector.internal.StrategySelectorImpl 83 registerStrategyImplementor - Registering named strategy selector [org.hibernate.boot.model.relational.ColumnOrderingStrategy] : [legacy] -> [org.hibernate.boot.model.relational.ColumnOrderingStrategyLegacy]
+29 May 2025 11:39:02,264 TRACE org.hibernate.boot.registry.selector.internal.StrategySelectorImpl 83 registerStrategyImplementor - Registering named strategy selector [org.hibernate.cache.spi.CacheKeysFactory] : [default] -> [org.hibernate.cache.internal.DefaultCacheKeysFactory]
+29 May 2025 11:39:02,264 TRACE org.hibernate.boot.registry.selector.internal.StrategySelectorImpl 83 registerStrategyImplementor - Registering named strategy selector [org.hibernate.cache.spi.CacheKeysFactory] : [simple] -> [org.hibernate.cache.internal.SimpleCacheKeysFactory]
+29 May 2025 11:39:02,265 TRACE org.hibernate.boot.registry.selector.internal.StrategySelectorImpl 83 registerStrategyImplementor - Registering named strategy selector [org.hibernate.type.format.FormatMapper] : [jackson] -> [org.hibernate.type.format.jackson.JacksonJsonFormatMapper]
+29 May 2025 11:39:02,266 TRACE org.hibernate.boot.registry.selector.internal.StrategySelectorImpl 83 registerStrategyImplementor - Registering named strategy selector [org.hibernate.type.format.FormatMapper] : [jsonb] -> [org.hibernate.type.format.jakartajson.JsonBJsonFormatMapper]
+29 May 2025 11:39:02,267 TRACE org.hibernate.boot.registry.selector.internal.StrategySelectorImpl 83 registerStrategyImplementor - Registering named strategy selector [org.hibernate.type.format.FormatMapper] : [jackson-xml] -> [org.hibernate.type.format.jackson.JacksonXmlFormatMapper]
+29 May 2025 11:39:02,268 TRACE org.hibernate.boot.registry.selector.internal.StrategySelectorImpl 83 registerStrategyImplementor - Registering named strategy selector [org.hibernate.type.format.FormatMapper] : [jaxb] -> [org.hibernate.type.format.jaxb.JaxbXmlFormatMapper]
+29 May 2025 11:39:28,761 INFO  ro.iss2025.medicineorderingsystem.repository.MedicineRepo 19 <init> - Initializing MedicineRepo with properties: {URL=jdbc:sqlite:D://Faculta//ISS//MedicineOrderingSystem//src//main//resources//ro//iss2025//medicineorderingsystem//SQLiteDb.db} 
+29 May 2025 11:39:28,777 INFO  ro.iss2025.medicineorderingsystem.repository.OrderRepo 21 <init> - Initializing OrderRepo with properties: {URL=jdbc:sqlite:D://Faculta//ISS//MedicineOrderingSystem//src//main//resources//ro//iss2025//medicineorderingsystem//SQLiteDb.db} 
+29 May 2025 11:43:02,530 INFO  ro.iss2025.medicineorderingsystem.repository.MedicineRepo 19 <init> - Initializing MedicineRepo with properties: {URL=jdbc:sqlite:D://Faculta//ISS//MedicineOrderingSystem//src//main//resources//ro//iss2025//medicineorderingsystem//SQLiteDb.db} 
+29 May 2025 11:43:02,546 INFO  ro.iss2025.medicineorderingsystem.repository.OrderRepo 21 <init> - Initializing OrderRepo with properties: {URL=jdbc:sqlite:D://Faculta//ISS//MedicineOrderingSystem//src//main//resources//ro//iss2025//medicineorderingsystem//SQLiteDb.db} 

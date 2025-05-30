@@ -1,9 +1,23 @@
 package ro.iss2025.medicineorderingsystem.domain;
+import jakarta.persistence.*;
+import jakarta.persistence.Entity;
 
-public class Medicine extends Entity<Integer>{
+import java.io.Serializable;
+import java.util.Objects;
+
+@Entity
+@Table( name = "medicine" )
+public class Medicine implements ro.iss2025.medicineorderingsystem.domain.Entity<Integer>, Comparable<Medicine>, Serializable {
+    @Column( name = "name")
     private String name;
+    @Column( name = "type")
     private String type;
+    @Column( name = "description")
     private String description;
+    @Id
+    @Column(name = "id")
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Integer id = -1;
 
     public Medicine(String name, String type, String description) {
         this.name = name;
@@ -44,5 +58,20 @@ public class Medicine extends Entity<Integer>{
     @Override
     public String toString() {
         return "Medicine{" + "name=" + name + ", type=" + type + ", description=" + description + '}';
+    }
+
+    @Override
+    public int compareTo(Medicine o) {
+        return this.id.compareTo(o.id);
+    }
+
+    @Override
+    public Integer getId() {
+        return id;
+    }
+
+    @Override
+    public void setId(Integer integer) {
+        id = integer;
     }
 }

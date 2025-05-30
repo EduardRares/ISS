@@ -1,9 +1,23 @@
 package ro.iss2025.medicineorderingsystem.domain;
 
-public class HospitalEmployee extends Entity<Integer> {
+import java.io.Serializable;
+import jakarta.persistence.*;
+import jakarta.persistence.Entity;
+
+@Entity
+@Table(name = "employee")
+public class HospitalEmployee implements ro.iss2025.medicineorderingsystem.domain.Entity<Integer>, Comparable<HospitalEmployee>, Serializable {
+    @Column(name = "email")
     private String email;
+    @Column(name = "password")
     private String password;
+    @Enumerated(EnumType.STRING)
+    @Column(name = "privilege")
     private Privilege privilege;
+    @Id
+    @Column(name = "id")
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Integer id;
 
     public HospitalEmployee(String email, String password, Privilege privilege) {
         this.email = email;
@@ -43,5 +57,20 @@ public class HospitalEmployee extends Entity<Integer> {
 
     public void setPrivilege(Privilege privilege) {
         this.privilege = privilege;
+    }
+
+    @Override
+    public Integer getId() {
+        return id;
+    }
+
+    @Override
+    public void setId(Integer integer) {
+        id = integer;
+    }
+
+    @Override
+    public int compareTo(HospitalEmployee o) {
+        return this.id.compareTo(o.getId());
     }
 }
