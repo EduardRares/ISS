@@ -6,25 +6,11 @@ module ro.iss2025.medicineorderingsystem {
     requires org.kordamp.bootstrapfx.core;
     requires org.apache.logging.log4j;
     requires java.sql;
-    requires java.desktop; // Required by Hibernate for some type mappings or JNDI
-    requires jakarta.persistence; // JPA API
-    requires org.hibernate.orm.core; // Hibernate ORM
-    requires spring.context; // If you are using Spring context
-    requires java.naming; // Required by Hibernate for JNDI, even if not directly used
 
-    // JAXB module - Required by Hibernate
-    requires jakarta.xml.bind;
-
-    // Required by Hibernate Validator
-    requires jakarta.validation;
-
-
-    // Hibernate uses jboss-logging
-    requires org.jboss.logging;
-    // Jakarta Transaction API
-    requires jakarta.transaction;
-    requires jakarta.enterprise.cdi;
-
+    requires jakarta.persistence;
+    requires org.hibernate.orm.core;
+    requires java.naming;
+    requires spring.context;
     opens ro.iss2025.medicineorderingsystem to javafx.fxml;
     exports ro.iss2025.medicineorderingsystem;
     exports ro.iss2025.medicineorderingsystem.controller;

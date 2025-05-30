@@ -20,6 +20,9 @@ public class Main extends Application {
     private HospitalEmployeeService hospitalEmployeeService;
     private MedicineService medicineService;
     private OrderService orderService;
+    private HospitalEmployeeService hospitalEmployeeService1;
+    private MedicineService medicineService1;
+    private OrderService orderService1;
     @Override
     public void start(Stage stage) throws IOException {
         Properties props=new Properties();
@@ -28,9 +31,9 @@ public class Main extends Application {
         } catch (IOException e) {
             System.out.println("Cannot find bd.config "+e);
         }
-        hospitalEmployeeService = new HospitalEmployeeService(new HospitalEmployeeHibernateRepo());
-        medicineService = new MedicineService(new MedicineHibernateRepo());
-        orderService = new OrderService(new OrderHibernateRepo());
+        hospitalEmployeeService1 = new HospitalEmployeeService(new HospitalEmployeeRepo(props));
+        medicineService1 = new MedicineService(new MedicineRepo(props));
+        orderService1 = new OrderService(new OrderRepo(props));
 
         initLoginView(stage);
 
@@ -43,7 +46,10 @@ public class Main extends Application {
         stage.setScene(scene);
         stage.show();
         LoginController loginController = fxmlLoader.getController();
-        loginController.setService(hospitalEmployeeService, medicineService, orderService);
+        hospitalEmployeeService = new HospitalEmployeeService(new HospitalEmployeeHibernateRepo());
+        medicineService = new MedicineService(new MedicineHibernateRepo());
+        orderService = new OrderService(new OrderHibernateRepo());
+        loginController.setService(hospitalEmployeeService1, medicineService1, orderService1);
     }
 
     public static void main(String[] args) {
